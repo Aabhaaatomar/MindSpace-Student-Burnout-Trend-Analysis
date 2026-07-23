@@ -1,0 +1,556 @@
+student_uid,name,gender,age,department,academic_year,study_hours,sleep_hours,stress_level,screen_time,attendance,mental_fatigue,physical_activity,burnout_score,burnout_category
+MS-2026-0001,Daniel Brown,Male,22,Mechanical Engineering,2,2.6,5.0,3.3,9.0,81.8,0.57,5.9,0.37,Low
+MS-2026-0002,Michael Lee,Female,24,Mechanical Engineering,4,6.2,8.5,1.0,2.1,92.2,0.14,7.0,0.19,Low
+MS-2026-0003,Emma Lopez,Female,22,Computer Science,4,5.8,9.4,2.2,5.6,82.1,0.33,8.3,0.24,Low
+MS-2026-0004,Charlotte Harris,Male,19,Mechanical Engineering,1,4.5,6.8,5.8,9.9,66.5,0.75,3.6,0.59,Medium
+MS-2026-0005,Evelyn White,Male,25,Business Analytics,3,9.4,7.7,5.0,7.3,87.4,0.56,8.4,0.35,Low
+MS-2026-0006,Elijah Robinson,Female,23,Mechanical Engineering,4,4.7,9.1,3.5,6.4,70.6,0.39,2.5,0.33,Low
+MS-2026-0007,Charlotte Jones,Female,19,Computer Science,1,2.7,5.3,4.4,8.5,83.9,0.66,3.8,0.44,Medium
+MS-2026-0008,Camila White,Male,22,Electrical Engineering,1,3.8,5.3,2.9,2.0,88.9,0.46,7.2,0.35,Low
+MS-2026-0009,Arthur Lee,Female,21,Mechanical Engineering,3,7.6,7.2,5.8,9.4,81.2,0.66,0.0,0.57,Medium
+MS-2026-0010,Sophia Davis,Male,19,Computer Science,4,8.0,9.4,5.3,7.1,65.0,0.5,6.6,0.43,Medium
+MS-2026-0011,Luna Moore,Female,21,Electrical Engineering,4,9.5,7.7,5.0,6.2,80.7,0.55,1.2,0.45,Medium
+MS-2026-0012,Noah Thompson,Female,21,Computer Science,1,8.4,4.9,4.8,4.3,86.8,0.67,2.1,0.51,Medium
+MS-2026-0013,Abigail Wilson,Male,19,Business Analytics,3,4.9,6.8,2.6,8.9,86.9,0.48,9.8,0.3,Low
+MS-2026-0014,Elijah Moore,Male,24,Mechanical Engineering,3,,8.9,1.0,2.7,92.3,0.18,8.6,0.13,Low
+MS-2026-0015,Ethan Ramirez,Male,24,Business Analytics,4,3.2,6.5,1.1,2.6,75.2,0.3,9.9,0.23,Low
+MS-2026-0016,Abigail Moore,Female,25,Mechanical Engineering,2,3.9,9.3,1.1,7.5,81.7,0.26,7.5,0.17,Low
+MS-2026-0017,Henry Williams,Female,19,Psychology,1,6.9,5.7,3.9,3.1,95.6,0.52,2.5,0.38,Low
+MS-2026-0018,Luna Rodriguez,Male,23,Mechanical Engineering,3,4.7,7.9,1.8,4.8,72.6,0.3,7.5,0.32,Low
+MS-2026-0019,Elijah Taylor,Male,23,Computer Science,2,4.5,5.3,5.8,9.9,88.1,0.81,6.1,0.5,Medium
+MS-2026-0020,Camila Brown,Female,20,Electrical Engineering,1,8.6,8.2,4.2,3.5,71.3,0.45,2.1,0.43,Medium
+MS-2026-0021,Luna Ramirez,Male,24,Electrical Engineering,1,1.5,8.4,2.3,8.1,70.5,0.38,7.4,0.2,Low
+MS-2026-0022,Sebastian Jones,Female,23,Psychology,2,4.9,4.7,2.0,5.5,97.3,0.45,9.7,0.34,Low
+MS-2026-0023,Evelyn Lewis,Female,20,Mechanical Engineering,2,9.3,8.6,6.0,10.4,61.0,0.73,7.4,0.59,Medium
+MS-2026-0024,William Garcia,Female,19,Business Analytics,1,8.4,5.6,7.7,9.8,78.4,0.88,3.1,0.6,Medium
+MS-2026-0025,Emily Williams,Non-Binary,22,Electrical Engineering,4,6.9,8.7,3.1,5.1,61.1,0.38,8.8,0.4,Medium
+MS-2026-0026,Amelia White,Female,24,Psychology,1,4.6,7.4,3.9,4.4,88.4,0.47,0.0,0.39,Low
+MS-2026-0027,Amelia Wilson,Male,23,Psychology,3,6.8,5.1,6.0,10.6,80.3,0.85,6.7,0.62,Medium
+MS-2026-0028,Benjamin Perez,Female,20,Psychology,3,4.7,8.7,2.6,4.9,68.4,0.31,7.9,0.26,Low
+MS-2026-0029,Abigail Lewis,Female,20,Computer Science,3,5.6,7.7,2.5,5.2,92.7,0.34,7.5,0.2,Low
+MS-2026-0030,Mia Martin,Female,19,Business Analytics,4,8.6,7.4,5.3,8.8,75.4,0.67,4.0,0.56,Medium
+MS-2026-0031,Ethan Wilson,Male,25,Computer Science,2,8.8,5.1,5.4,3.3,78.6,0.62,5.3,0.55,Medium
+MS-2026-0032,Sebastian Taylor,Male,25,Mechanical Engineering,4,5.1,8.3,4.1,10.0,71.1,0.53,7.8,0.39,Low
+MS-2026-0033,James Hernandez,Female,19,Mechanical Engineering,2,3.4,8.0,4.3,8.7,62.6,0.55,4.1,0.38,Low
+MS-2026-0034,Alexander Thompson,Male,24,Business Analytics,1,9.0,6.0,4.3,5.7,95.7,0.6,8.4,0.47,Medium
+MS-2026-0035,William Wilson,Female,24,Electrical Engineering,4,7.3,8.7,4.8,10.7,99.2,0.61,5.3,0.43,Medium
+MS-2026-0036,Emily Anderson,Male,22,Business Analytics,3,,6.1,4.8,9.2,75.2,0.65,7.5,0.42,Medium
+MS-2026-0037,Amelia Davis,Female,18,Computer Science,2,3.1,4.6,3.8,3.4,65.0,0.52,6.7,0.48,Medium
+MS-2026-0038,Harper White,Female,20,Electrical Engineering,1,6.1,9.1,3.6,7.5,96.3,0.41,3.8,0.3,Low
+MS-2026-0039,Michael Harris,Male,19,Psychology,1,4.3,6.6,4.2,5.5,80.2,0.57,3.4,0.36,Low
+MS-2026-0040,Arthur Anderson,Female,24,Mechanical Engineering,3,6.4,9.1,3.8,9.4,78.6,0.47,8.3,0.3,Low
+MS-2026-0041,Lucas Davis,Female,24,Electrical Engineering,1,5.5,6.1,4.6,6.6,74.2,0.62,2.6,0.54,Medium
+MS-2026-0042,Elijah Williams,Male,24,Business Analytics,2,7.0,7.7,3.7,6.7,91.7,0.5,0.9,0.32,Low
+MS-2026-0043,Henry Lopez,Male,23,Electrical Engineering,4,3.7,5.8,4.0,3.1,67.7,0.54,1.2,0.39,Low
+MS-2026-0044,Gianna Jackson,Non-Binary,22,Computer Science,2,3.9,6.3,2.4,4.9,88.3,0.37,1.3,0.25,Low
+MS-2026-0045,Ethan Thomas,Male,18,Psychology,3,5.3,6.7,3.4,3.8,62.1,0.48,9.4,0.38,Low
+MS-2026-0046,Olivia Jones,Male,22,Computer Science,2,2.4,8.3,2.3,7.8,91.6,0.38,2.3,0.24,Low
+MS-2026-0047,Sophia Jackson,Female,19,Mechanical Engineering,2,3.6,4.9,3.8,4.3,82.1,0.57,1.6,0.43,Medium
+MS-2026-0048,Sophia Thompson,Female,19,Mechanical Engineering,3,7.8,7.6,4.4,8.3,97.3,0.58,4.3,0.46,Medium
+MS-2026-0049,Ava Sanchez,Male,22,Business Analytics,1,5.2,6.0,4.3,5.8,70.9,0.59,5.4,0.52,Medium
+MS-2026-0050,Liam Williams,Male,18,Electrical Engineering,1,7.6,5.4,7.1,6.9,77.7,0.81,2.8,0.68,Medium
+MS-2026-0051,Isabella Hernandez,Male,19,Mechanical Engineering,3,4.8,7.0,3.0,8.3,76.0,0.45,7.6,0.3,Low
+MS-2026-0052,Emily Taylor,Female,18,Psychology,4,4.8,5.4,3.9,5.4,90.3,0.54,6.3,0.42,Medium
+MS-2026-0053,Michael Thomas,Male,21,Mechanical Engineering,3,5.9,7.3,1.2,2.9,99.7,0.21,9.1,0.21,Low
+MS-2026-0054,Henry Thompson,Male,25,Business Analytics,2,5.2,5.2,2.6,3.8,84.0,0.41,7.5,0.37,Low
+MS-2026-0055,Abigail Taylor,Male,18,Electrical Engineering,3,8.2,7.4,4.6,8.3,94.6,0.58,4.5,0.45,Medium
+MS-2026-0056,Emily Miller,Non-Binary,21,Psychology,4,3.4,8.4,1.0,2.4,89.8,0.17,7.1,0.16,Low
+MS-2026-0057,Mia Johnson,Male,23,Computer Science,4,2.3,9.1,1.3,2.1,65.8,0.13,8.7,0.2,Low
+MS-2026-0058,Benjamin Lee,Male,23,Psychology,4,9.1,7.6,6.4,10.4,79.5,0.73,5.4,0.58,Medium
+MS-2026-0059,Noah Wilson,Non-Binary,19,Business Analytics,2,7.1,9.0,1.8,2.4,91.8,0.18,2.9,0.16,Low
+MS-2026-0060,Ava Garcia,Male,24,Psychology,2,5.5,7.4,3.1,4.2,85.5,0.44,4.6,0.32,Low
+MS-2026-0061,Noah Anderson,Female,22,Business Analytics,3,5.2,6.0,5.4,11.5,94.1,0.75,1.1,0.49,Medium
+MS-2026-0062,Arthur Perez,Male,18,Psychology,1,8.8,8.2,3.9,9.9,96.1,0.57,7.8,0.32,Low
+MS-2026-0063,Ethan White,Female,20,Computer Science,1,4.0,6.7,3.5,7.5,89.3,0.55,0.9,0.33,Low
+MS-2026-0064,Amelia Taylor,Female,22,Mechanical Engineering,3,8.8,9.2,6.0,11.2,71.8,0.67,8.7,0.43,Medium
+MS-2026-0065,Camila White,Female,24,Psychology,3,2.2,6.5,3.7,4.5,64.9,0.47,3.7,0.38,Low
+MS-2026-0066,Camila Davis,Female,23,Psychology,2,6.7,7.7,2.6,6.4,88.0,0.36,6.5,0.2,Low
+MS-2026-0067,Charlotte Lewis,Female,24,Business Analytics,3,6.9,8.2,4.3,11.0,76.8,0.58,7.4,0.35,Low
+MS-2026-0068,William Johnson,Female,21,Business Analytics,4,9.1,8.8,3.9,2.9,87.4,0.36,5.4,0.28,Low
+MS-2026-0069,Emily Clark,Male,21,Psychology,1,1.9,6.2,4.8,11.4,91.5,0.72,2.1,0.5,Medium
+MS-2026-0070,Ethan Jones,Female,18,Electrical Engineering,2,9.4,,5.8,9.6,64.4,0.7,8.7,0.59,Medium
+MS-2026-0071,William Johnson,Male,24,Psychology,1,7.5,6.9,6.2,9.4,80.5,0.79,1.1,0.5,Medium
+MS-2026-0072,Henry Martinez,Male,18,Computer Science,4,8.3,6.6,4.6,3.0,88.5,0.5,4.4,0.35,Low
+MS-2026-0073,Alexander Moore,Female,24,Psychology,3,5.1,7.5,1.8,2.9,88.1,0.31,8.5,0.26,Low
+MS-2026-0074,Charlotte Wilson,Male,25,Business Analytics,4,7.3,6.1,4.8,5.0,70.2,0.59,9.5,0.41,Medium
+MS-2026-0075,Gianna White,Male,20,Psychology,1,6.2,7.3,4.9,5.1,64.9,0.58,3.5,0.53,Medium
+MS-2026-0076,Harper Martinez,Male,21,Mechanical Engineering,4,3.3,5.0,5.1,10.0,74.7,0.79,7.6,0.62,Medium
+MS-2026-0077,Harper Perez,Female,18,Psychology,3,1.7,5.9,2.5,9.2,96.9,0.49,3.5,0.35,Low
+MS-2026-0078,Liam Williams,Female,21,Business Analytics,4,5.1,5.3,4.0,5.0,73.0,0.61,9.4,0.41,Medium
+MS-2026-0079,Noah Rodriguez,Male,24,Business Analytics,4,4.8,5.6,5.7,6.9,73.8,0.72,1.1,0.56,Medium
+MS-2026-0080,Harper Johnson,Male,22,Mechanical Engineering,2,7.6,5.9,3.6,3.1,79.9,0.48,4.3,0.34,Low
+MS-2026-0081,Amelia Williams,Male,18,Business Analytics,1,5.2,4.9,5.0,5.0,77.2,0.63,4.0,0.49,Medium
+MS-2026-0082,Harper Anderson,Female,23,Computer Science,4,8.3,5.7,5.7,7.6,81.0,0.71,4.0,0.51,Medium
+MS-2026-0083,Emma Taylor,Female,23,Electrical Engineering,2,3.4,5.2,2.9,3.9,84.1,0.44,7.6,0.4,Medium
+MS-2026-0084,Ethan Jackson,Male,23,Electrical Engineering,2,5.0,6.8,3.2,8.0,91.9,0.47,5.9,0.33,Low
+MS-2026-0085,Sophia Williams,Female,19,Psychology,4,5.2,7.3,4.4,9.5,95.8,0.62,4.5,0.39,Low
+MS-2026-0086,Olivia Anderson,Male,23,Computer Science,2,1.8,8.0,2.9,11.4,81.0,0.55,6.1,0.33,Low
+MS-2026-0087,Olivia Sanchez,Female,23,Computer Science,3,2.3,7.9,1.8,4.7,88.9,0.34,6.6,0.2,Low
+MS-2026-0088,Amelia Martinez,Non-Binary,24,Mechanical Engineering,1,4.0,6.4,4.3,9.5,92.5,0.66,6.7,0.48,Medium
+MS-2026-0089,Isabella Taylor,Male,23,Electrical Engineering,2,9.1,6.2,5.8,9.3,67.7,0.72,10.0,0.61,Medium
+MS-2026-0090,Gianna Lewis,Female,23,Psychology,2,6.3,5.3,4.5,3.7,87.7,0.6,6.2,0.38,Low
+MS-2026-0091,Lucas Martin,Male,25,Mechanical Engineering,2,4.0,8.5,3.0,6.5,93.4,0.45,3.7,0.29,Low
+MS-2026-0092,Henry Wilson,Non-Binary,21,Psychology,2,8.5,4.8,6.3,6.6,74.8,0.78,9.3,0.55,Medium
+MS-2026-0093,Lucas Lewis,Female,24,Computer Science,2,8.0,8.9,5.3,10.8,76.6,0.62,4.0,0.39,Low
+MS-2026-0094,Emma Clark,Female,23,Mechanical Engineering,2,,9.1,1.0,6.5,93.2,0.25,7.6,0.21,Low
+MS-2026-0095,Oliver Moore,Female,24,Computer Science,3,3.4,5.1,2.0,4.3,85.6,0.46,6.2,0.33,Low
+MS-2026-0096,Alexander Davis,Female,22,Business Analytics,1,6.4,5.7,6.0,6.0,86.6,0.67,0.9,0.53,Medium
+MS-2026-0097,Evelyn Smith,Male,25,Computer Science,4,9.3,5.8,4.9,2.2,91.5,0.57,3.4,0.49,Medium
+MS-2026-0098,Olivia Lopez,Female,20,Business Analytics,4,6.6,8.6,1.5,2.6,91.0,0.17,4.6,0.1,Low
+MS-2026-0099,Henry Gonzalez,Non-Binary,25,Electrical Engineering,1,7.5,5.5,3.7,5.4,91.2,0.51,8.7,0.37,Low
+MS-2026-0100,Sebastian Gonzalez,Male,20,Business Analytics,4,4.4,8.5,2.9,4.5,63.3,0.4,4.2,0.27,Low
+MS-2026-0101,James Perez,Male,25,Psychology,4,2.8,6.7,2.0,6.2,89.1,0.39,9.1,0.29,Low
+MS-2026-0102,Camila Lee,Male,20,Computer Science,2,8.3,7.9,5.9,6.2,65.0,0.61,2.4,0.58,Medium
+MS-2026-0103,Lucas Lopez,Male,19,Psychology,2,5.7,6.5,6.3,8.2,70.0,0.74,1.1,0.56,Medium
+MS-2026-0104,William Thompson,Male,22,Business Analytics,2,2.5,8.8,1.0,6.3,95.9,0.26,4.5,0.21,Low
+MS-2026-0105,Noah Moore,Female,22,Mechanical Engineering,2,7.8,7.0,5.6,3.2,68.0,0.53,1.4,0.48,Medium
+MS-2026-0106,Evelyn Jones,Female,19,Computer Science,3,4.7,8.1,3.5,6.5,76.4,0.41,4.1,0.3,Low
+MS-2026-0107,Henry Lopez,Male,20,Mechanical Engineering,4,5.5,8.8,3.6,9.9,80.7,0.54,3.0,0.32,Low
+MS-2026-0108,Sophia Ramirez,Male,21,Psychology,3,2.5,6.0,4.8,7.1,80.1,0.6,1.7,0.49,Medium
+MS-2026-0109,Arthur Robinson,Female,18,Computer Science,1,9.1,8.4,4.8,4.5,68.4,0.44,5.7,0.46,Medium
+MS-2026-0110,Sophia Thomas,Male,24,Electrical Engineering,4,2.1,4.8,4.2,6.2,79.4,0.61,2.0,0.5,Medium
+MS-2026-0111,Benjamin Jones,Female,19,Electrical Engineering,2,5.2,5.8,4.6,4.4,63.9,0.59,2.9,0.44,Medium
+MS-2026-0112,James Robinson,Female,23,Mechanical Engineering,2,5.5,7.1,5.9,6.7,72.3,0.66,0.2,0.6,Medium
+MS-2026-0113,Olivia Martinez,Female,25,Electrical Engineering,1,8.3,6.7,5.2,10.4,89.1,0.69,7.6,0.5,Medium
+MS-2026-0114,Noah Gonzalez,Female,22,Psychology,1,2.5,5.0,2.1,5.5,99.5,0.42,5.6,0.31,Low
+MS-2026-0115,Olivia Jones,Female,25,Psychology,4,2.7,9.0,1.0,3.3,97.3,0.19,3.2,0.18,Low
+MS-2026-0116,Henry Moore,Female,22,Business Analytics,1,4.4,7.9,4.3,11.3,83.3,0.63,8.0,0.35,Low
+MS-2026-0117,Abigail Harris,Female,21,Computer Science,4,2.9,,3.2,7.9,93.6,0.43,1.5,0.38,Low
+MS-2026-0118,James Wilson,Male,21,Business Analytics,4,8.5,8.2,4.1,2.6,65.5,0.43,2.1,0.38,Low
+MS-2026-0119,Luna Moore,Male,23,Electrical Engineering,4,3.0,5.7,3.2,7.3,69.0,0.52,9.7,0.36,Low
+MS-2026-0120,Amelia Moore,Female,22,Electrical Engineering,1,6.1,7.2,6.2,10.5,75.8,0.72,3.5,0.47,Medium
+MS-2026-0121,Luna Anderson,Female,25,Mechanical Engineering,2,8.1,5.9,7.3,7.3,70.9,0.79,1.1,0.57,Medium
+MS-2026-0122,Charlotte Johnson,Male,23,Business Analytics,1,6.9,5.2,6.6,11.2,99.1,0.92,1.6,0.62,Medium
+MS-2026-0123,Sophia Hernandez,Male,18,Computer Science,2,5.8,8.1,5.2,10.9,96.5,0.63,1.8,0.5,Medium
+MS-2026-0124,Mia Garcia,Female,22,Computer Science,1,3.9,7.5,5.0,10.8,73.4,0.67,4.5,0.55,Medium
+MS-2026-0125,William Miller,Female,23,Mechanical Engineering,4,6.7,8.1,3.5,2.1,73.5,0.33,3.0,0.32,Low
+MS-2026-0126,Isabella Taylor,Male,24,Computer Science,2,9.4,6.9,7.9,10.9,60.3,0.87,3.8,0.66,Medium
+MS-2026-0127,William Lee,Male,21,Computer Science,1,5.2,5.3,4.3,8.5,96.9,0.68,8.9,0.49,Medium
+MS-2026-0128,Charlotte Davis,Female,25,Mechanical Engineering,4,7.5,7.5,4.3,6.0,82.0,0.54,4.7,0.36,Low
+MS-2026-0129,Emily Sanchez,Male,25,Psychology,3,2.1,7.3,1.3,2.6,81.9,0.22,5.1,0.16,Low
+MS-2026-0130,Elijah Thompson,Female,19,Psychology,4,8.0,6.8,5.8,6.9,78.3,0.7,0.6,0.56,Medium
+MS-2026-0131,Gianna Miller,Female,18,Business Analytics,3,7.1,7.2,1.7,2.6,95.8,0.26,9.9,0.15,Low
+MS-2026-0132,Gianna Lee,Non-Binary,23,Business Analytics,4,8.5,9.0,3.3,5.6,87.3,0.4,6.6,0.27,Low
+MS-2026-0133,Henry Jones,Female,21,Computer Science,1,9.3,6.8,6.0,8.8,77.0,0.72,3.8,0.49,Medium
+MS-2026-0134,Ethan Brown,Male,24,Psychology,1,3.4,4.8,5.1,7.6,77.9,0.69,6.7,0.46,Medium
+MS-2026-0135,Ethan Ramirez,Female,20,Psychology,3,3.4,9.1,2.4,7.5,83.1,0.33,7.7,0.3,Low
+MS-2026-0136,Isabella Martinez,Male,20,Business Analytics,4,1.9,6.2,3.9,8.1,75.2,0.58,5.2,0.4,Medium
+MS-2026-0137,Charlotte Ramirez,Male,20,Business Analytics,1,6.0,9.3,3.7,7.3,65.4,0.45,2.4,0.42,Medium
+MS-2026-0138,Gianna Clark,Male,22,Business Analytics,1,8.5,,6.1,9.2,89.0,0.83,5.6,0.56,Medium
+MS-2026-0139,Luna Miller,Non-Binary,19,Business Analytics,2,7.1,8.0,4.2,5.8,69.6,0.49,3.2,0.42,Medium
+MS-2026-0140,Sebastian Thomas,Male,25,Electrical Engineering,2,4.5,6.6,4.5,7.3,68.9,0.64,1.5,0.49,Medium
+MS-2026-0141,James Davis,Male,21,Business Analytics,3,3.6,8.6,2.8,11.2,85.7,0.51,4.9,0.27,Low
+MS-2026-0142,Luna Lewis,Female,18,Psychology,1,8.2,4.9,7.9,9.8,61.9,0.97,0.1,0.68,Medium
+MS-2026-0143,Lucas Lopez,Male,25,Business Analytics,1,1.6,7.3,2.1,2.1,81.2,0.25,2.7,0.28,Low
+MS-2026-0144,Luna Garcia,Male,19,Psychology,2,3.4,7.6,1.1,4.4,74.2,0.31,7.9,0.22,Low
+MS-2026-0145,Sophia Perez,Female,19,Computer Science,1,4.7,6.4,2.5,6.5,85.5,0.48,7.0,0.35,Low
+MS-2026-0146,Emma Lewis,Female,18,Mechanical Engineering,2,8.7,8.0,5.1,7.4,70.8,0.56,9.2,0.46,Medium
+MS-2026-0147,Emily Hernandez,Male,21,Psychology,2,7.5,8.1,4.8,5.8,63.1,0.56,1.6,0.43,Medium
+MS-2026-0148,Ethan White,Male,19,Psychology,3,1.9,6.7,4.5,10.0,73.6,0.64,7.7,0.51,Medium
+MS-2026-0149,Lucas Thomas,Male,24,Business Analytics,2,6.9,7.8,2.7,2.8,84.7,0.29,8.0,0.2,Low
+MS-2026-0150,Gianna Gonzalez,Male,19,Computer Science,1,9.0,6.7,7.5,9.2,64.1,0.85,0.9,0.67,Medium
+MS-2026-0151,Evelyn Williams,Female,23,Business Analytics,1,3.8,6.4,2.0,2.8,96.0,0.35,9.1,0.2,Low
+MS-2026-0152,Sophia Rodriguez,Female,19,Mechanical Engineering,4,3.7,6.0,4.6,9.4,74.4,0.67,9.4,0.51,Medium
+MS-2026-0153,Liam Gonzalez,Male,24,Electrical Engineering,4,4.2,8.6,2.9,10.2,99.0,0.51,1.4,0.25,Low
+MS-2026-0154,James Martinez,Female,25,Psychology,2,4.1,5.9,3.8,9.5,74.6,0.67,9.3,0.42,Medium
+MS-2026-0155,Gianna Anderson,Female,21,Business Analytics,3,8.2,4.8,5.6,10.1,91.8,0.78,6.7,0.52,Medium
+MS-2026-0156,Benjamin Williams,Male,25,Psychology,4,5.8,9.1,5.9,10.3,76.7,0.68,0.4,0.54,Medium
+MS-2026-0157,Emma Harris,Male,23,Mechanical Engineering,1,6.0,7.7,4.1,8.1,98.7,0.5,3.3,0.29,Low
+MS-2026-0158,Evelyn Jackson,Female,21,Business Analytics,3,4.6,8.4,2.5,7.6,80.0,0.35,3.4,0.25,Low
+MS-2026-0159,Gianna Jones,Male,23,Business Analytics,2,5.7,6.2,2.1,2.9,88.9,0.31,4.5,0.29,Low
+MS-2026-0160,Emma Perez,Female,21,Psychology,2,5.9,6.2,4.2,6.1,78.5,0.54,8.0,0.45,Medium
+MS-2026-0161,Sebastian Miller,Male,24,Business Analytics,1,7.1,5.5,5.3,9.1,92.3,0.77,0.6,0.48,Medium
+MS-2026-0162,William Perez,Female,23,Psychology,4,6.4,7.4,3.5,5.3,93.8,0.48,6.2,0.31,Low
+MS-2026-0163,Oliver Hernandez,Male,22,Computer Science,2,4.5,5.2,3.7,5.7,83.9,0.56,5.7,0.43,Medium
+MS-2026-0164,Ava Moore,Male,22,Mechanical Engineering,2,4.0,6.8,2.5,2.5,74.4,0.38,0.1,0.38,Low
+MS-2026-0165,Camila Thomas,Male,25,Business Analytics,2,2.2,4.7,5.4,9.2,71.7,0.74,2.7,0.56,Medium
+MS-2026-0166,Evelyn Taylor,Male,19,Electrical Engineering,3,5.8,8.3,4.6,9.2,77.7,0.6,2.2,0.45,Medium
+MS-2026-0167,Olivia Anderson,Male,19,Business Analytics,1,7.7,5.7,6.9,9.7,83.5,0.86,3.5,0.58,Medium
+MS-2026-0168,Elijah Sanchez,Male,23,Psychology,3,6.3,5.3,7.7,11.3,71.7,0.95,5.7,0.78,High
+MS-2026-0169,Ethan Sanchez,Male,18,Electrical Engineering,2,7.1,5.2,5.9,3.4,72.9,0.66,2.5,0.49,Medium
+MS-2026-0170,Benjamin Anderson,Male,19,Business Analytics,3,7.1,8.9,4.2,6.3,79.5,0.5,5.8,0.3,Low
+MS-2026-0171,Michael Lopez,Female,24,Mechanical Engineering,4,8.1,7.0,4.1,5.1,71.3,0.54,5.5,0.47,Medium
+MS-2026-0172,Olivia Brown,Female,25,Computer Science,1,8.9,5.3,6.2,6.3,99.7,0.79,4.3,0.63,Medium
+MS-2026-0173,Sebastian Rodriguez,Male,23,Electrical Engineering,1,4.5,,2.5,3.6,75.9,0.26,3.1,0.25,Low
+MS-2026-0174,Mia Williams,Male,21,Psychology,4,1.6,8.0,1.2,9.8,99.5,0.32,4.2,0.17,Low
+MS-2026-0175,James Lopez,Female,20,Business Analytics,2,6.6,7.9,1.8,2.6,82.5,0.25,6.1,0.16,Low
+MS-2026-0176,Harper Perez,Male,21,Computer Science,1,2.6,5.1,5.4,8.9,74.1,0.73,4.3,0.58,Medium
+MS-2026-0177,Gianna Martin,Male,18,Electrical Engineering,2,5.6,7.0,6.6,9.1,71.8,0.81,0.5,0.6,Medium
+MS-2026-0178,Harper Williams,Female,18,Electrical Engineering,3,,8.8,2.6,7.4,74.6,0.42,6.8,0.34,Low
+MS-2026-0179,William Miller,Male,18,Business Analytics,3,6.5,7.0,4.4,5.9,88.1,0.56,0.8,0.38,Low
+MS-2026-0180,Elijah Sanchez,Male,23,Business Analytics,1,4.0,6.7,6.6,11.1,69.5,0.78,2.4,0.62,Medium
+MS-2026-0181,Camila White,Male,18,Mechanical Engineering,1,2.8,9.3,1.0,7.0,91.3,0.2,7.2,0.17,Low
+MS-2026-0182,Ethan Lewis,Male,24,Electrical Engineering,1,3.6,9.4,1.5,8.0,79.8,0.32,5.1,0.15,Low
+MS-2026-0183,Sebastian Jackson,Female,19,Mechanical Engineering,1,1.9,8.8,1.0,4.3,78.9,0.25,3.8,0.23,Low
+MS-2026-0184,Gianna Lee,Male,23,Mechanical Engineering,4,8.8,6.1,7.4,9.8,82.9,0.83,1.2,0.59,Medium
+MS-2026-0185,Benjamin Williams,Female,22,Electrical Engineering,3,2.2,6.8,2.9,5.5,71.7,0.42,7.8,0.32,Low
+MS-2026-0186,Ethan Miller,Female,21,Mechanical Engineering,1,9.0,4.6,5.1,7.1,85.4,0.7,6.9,0.57,Medium
+MS-2026-0187,Sophia Brown,Male,21,Business Analytics,4,9.2,9.4,3.8,3.4,71.2,0.39,0.4,0.31,Low
+MS-2026-0188,Gianna Williams,Female,20,Business Analytics,1,6.2,4.8,7.6,8.3,65.2,0.95,2.9,0.71,High
+MS-2026-0189,Lucas Rodriguez,Male,21,Mechanical Engineering,1,2.7,5.3,4.7,6.4,76.3,0.62,5.4,0.46,Medium
+MS-2026-0190,Ava Sanchez,Female,18,Mechanical Engineering,3,2.7,8.1,4.1,11.2,75.8,0.62,0.5,0.37,Low
+MS-2026-0191,Evelyn White,Female,19,Business Analytics,1,7.9,5.2,2.3,2.1,93.2,0.43,9.8,0.29,Low
+MS-2026-0192,Alexander Jackson,Male,19,Computer Science,1,3.1,7.7,4.5,9.7,63.7,0.56,8.5,0.51,Medium
+MS-2026-0193,Isabella Clark,Female,25,Computer Science,4,7.0,5.4,6.3,4.0,67.5,0.66,2.8,0.59,Medium
+MS-2026-0194,Isabella Lewis,Female,18,Computer Science,3,4.6,6.6,5.0,8.1,91.9,0.65,2.5,0.39,Low
+MS-2026-0195,Mia Moore,Female,23,Psychology,3,4.6,5.4,4.4,5.0,68.8,0.55,9.0,0.54,Medium
+MS-2026-0196,Charlotte Garcia,Male,21,Electrical Engineering,1,7.6,9.2,4.0,7.5,99.3,0.51,3.9,0.28,Low
+MS-2026-0197,Gianna Thompson,Male,18,Electrical Engineering,2,6.0,5.4,5.2,11.4,95.3,0.78,4.9,0.47,Medium
+MS-2026-0198,Henry Thomas,Male,21,Mechanical Engineering,3,7.2,9.1,5.8,10.0,72.9,0.68,0.2,0.54,Medium
+MS-2026-0199,Noah Lopez,Female,24,Psychology,1,4.2,6.1,5.2,11.3,89.3,0.74,4.4,0.49,Medium
+MS-2026-0200,Sebastian Robinson,Female,23,Mechanical Engineering,2,4.5,8.2,4.2,4.8,67.1,0.47,0.0,0.44,Medium
+MS-2026-0201,Ava Martin,Male,21,Psychology,1,9.0,5.2,6.1,9.1,69.5,0.84,9.8,0.56,Medium
+MS-2026-0202,Sebastian Hernandez,Male,22,Mechanical Engineering,2,7.0,6.3,5.9,9.5,88.8,0.74,0.5,0.48,Medium
+MS-2026-0203,Amelia Moore,Male,25,Psychology,2,2.8,4.9,6.5,10.0,71.8,0.82,3.2,0.58,Medium
+MS-2026-0204,Evelyn Lewis,Non-Binary,23,Psychology,4,7.1,6.7,4.2,8.2,84.3,0.57,4.3,0.5,Medium
+MS-2026-0205,Luna White,Female,22,Electrical Engineering,2,2.3,6.5,2.8,7.2,79.6,0.44,0.5,0.39,Low
+MS-2026-0206,Emma Smith,Male,22,Computer Science,4,8.3,6.0,4.3,5.8,79.6,0.58,6.6,0.39,Low
+MS-2026-0207,Lucas Johnson,Male,25,Electrical Engineering,2,8.2,7.3,4.4,3.4,87.9,0.51,1.0,0.38,Low
+MS-2026-0208,Olivia Clark,Male,24,Psychology,4,6.1,5.7,3.0,4.8,75.8,0.49,8.5,0.38,Low
+MS-2026-0209,Oliver Brown,Female,25,Mechanical Engineering,2,9.3,8.5,3.0,3.2,76.9,0.38,9.9,0.32,Low
+MS-2026-0210,Luna White,Female,19,Computer Science,4,6.0,7.3,3.4,10.1,80.8,0.57,9.2,0.4,Medium
+MS-2026-0211,Oliver Jones,Female,19,Computer Science,1,7.8,8.8,5.0,10.4,95.1,0.61,2.6,0.41,Medium
+MS-2026-0212,Harper Martin,Female,24,Computer Science,4,8.6,6.2,4.6,4.3,89.8,0.51,9.2,0.46,Medium
+MS-2026-0213,Mia Ramirez,Female,19,Mechanical Engineering,2,3.9,8.2,3.8,9.4,72.8,0.48,7.3,0.36,Low
+MS-2026-0214,Mia Harris,Female,23,Computer Science,2,2.0,8.0,1.3,5.8,91.2,0.25,5.2,0.24,Low
+MS-2026-0215,Olivia Anderson,Male,23,Mechanical Engineering,3,4.4,6.8,1.7,5.8,96.9,0.36,6.8,0.23,Low
+MS-2026-0216,Evelyn Lopez,Male,22,Computer Science,3,1.7,4.7,3.9,10.1,91.2,0.66,2.1,0.41,Medium
+MS-2026-0217,Emily Harris,Non-Binary,18,Business Analytics,2,6.7,7.5,2.5,2.1,70.1,0.36,8.1,0.32,Low
+MS-2026-0218,Amelia Anderson,Male,25,Electrical Engineering,4,6.2,4.5,5.6,11.5,98.7,0.85,8.4,0.54,Medium
+MS-2026-0219,James Rodriguez,Female,22,Electrical Engineering,3,3.0,7.1,3.2,4.3,62.3,0.42,8.6,0.33,Low
+MS-2026-0220,Mia Martinez,Male,24,Business Analytics,4,7.4,7.4,6.0,11.5,92.6,0.77,3.4,0.55,Medium
+MS-2026-0221,Amelia Taylor,Male,20,Psychology,2,3.9,6.9,4.3,9.0,89.0,0.65,5.6,0.5,Medium
+MS-2026-0222,Charlotte White,Female,24,Electrical Engineering,3,3.6,6.0,4.4,10.1,78.8,0.71,8.7,0.43,Medium
+MS-2026-0223,Emily Perez,Male,22,Business Analytics,1,8.5,5.3,7.8,11.4,73.7,1.0,9.9,0.68,Medium
+MS-2026-0224,Noah Thomas,Male,20,Electrical Engineering,1,1.5,5.9,3.9,9.2,66.7,0.65,7.6,0.41,Medium
+MS-2026-0225,Benjamin Wilson,Non-Binary,24,Computer Science,1,5.8,8.2,3.7,11.0,95.7,0.5,7.6,0.26,Low
+MS-2026-0226,Sebastian Lopez,Male,19,Business Analytics,3,2.8,8.6,1.8,4.8,71.6,0.26,7.3,0.28,Low
+MS-2026-0227,Sebastian Thomas,Male,21,Mechanical Engineering,4,1.7,5.6,5.9,11.4,68.4,0.78,0.2,0.63,Medium
+MS-2026-0228,Daniel Rodriguez,Female,18,Psychology,1,6.8,7.8,2.2,2.2,87.6,0.29,4.2,0.23,Low
+MS-2026-0229,Daniel Smith,Male,19,Psychology,3,6.5,8.0,3.1,6.0,95.9,0.4,5.1,0.33,Low
+MS-2026-0230,Ethan Rodriguez,Female,21,Electrical Engineering,4,3.9,4.7,4.1,6.7,68.3,0.58,9.3,0.5,Medium
+MS-2026-0231,Camila Thomas,Male,19,Psychology,1,7.3,5.0,4.4,4.4,69.2,0.59,9.9,0.42,Medium
+MS-2026-0232,Sophia Lopez,Female,23,Business Analytics,1,2.3,8.3,1.0,2.4,94.1,0.17,6.6,0.12,Low
+MS-2026-0233,Noah Lopez,Female,20,Computer Science,4,4.7,6.8,4.2,9.9,87.6,0.66,4.8,0.39,Low
+MS-2026-0234,Emily Garcia,Male,25,Psychology,4,3.0,6.4,4.2,5.4,61.2,0.59,6.8,0.41,Medium
+MS-2026-0235,Isabella Anderson,Male,22,Electrical Engineering,1,7.1,7.9,5.6,9.3,83.1,0.68,5.7,0.46,Medium
+MS-2026-0236,Emma Wilson,Female,21,Business Analytics,3,6.8,7.7,2.1,3.4,93.1,0.26,8.9,0.28,Low
+MS-2026-0237,Mia Ramirez,Male,25,Electrical Engineering,2,4.1,5.9,4.7,6.8,82.0,0.59,3.8,0.45,Medium
+MS-2026-0238,Mia Anderson,Male,25,Computer Science,1,4.7,4.7,4.8,7.2,93.0,0.71,7.9,0.57,Medium
+MS-2026-0239,Lucas Hernandez,Male,18,Mechanical Engineering,4,,8.3,2.8,7.7,88.7,0.38,3.6,0.3,Low
+MS-2026-0240,Daniel Sanchez,Male,23,Computer Science,1,8.7,7.0,5.3,9.8,89.7,0.66,4.1,0.42,Medium
+MS-2026-0241,Arthur Sanchez,Male,23,Computer Science,4,1.9,,2.8,8.4,64.9,0.46,8.9,0.35,Low
+MS-2026-0242,Gianna Johnson,Female,24,Psychology,4,8.9,8.4,6.5,10.6,87.7,0.69,1.7,0.54,Medium
+MS-2026-0243,Sebastian Gonzalez,Male,21,Electrical Engineering,4,9.2,9.4,5.4,6.3,65.3,0.55,4.1,0.41,Medium
+MS-2026-0244,Michael White,Female,21,Mechanical Engineering,2,6.5,6.0,3.7,5.3,86.9,0.57,9.8,0.41,Medium
+MS-2026-0245,Emma Harris,Male,25,Psychology,4,6.9,9.0,2.0,7.1,95.1,0.28,4.2,0.17,Low
+MS-2026-0246,William Harris,Female,22,Electrical Engineering,2,8.2,8.0,4.8,4.8,90.1,0.47,0.3,0.44,Medium
+MS-2026-0247,Gianna Lee,Female,21,Psychology,3,7.0,4.7,5.5,5.6,76.7,0.76,7.9,0.5,Medium
+MS-2026-0248,Emily Harris,Female,25,Mechanical Engineering,3,7.5,7.2,3.3,7.7,91.0,0.46,9.6,0.36,Low
+MS-2026-0249,Henry Brown,Male,24,Electrical Engineering,3,2.5,7.4,1.2,4.4,73.2,0.24,7.1,0.18,Low
+MS-2026-0250,Harper Clark,Female,25,Psychology,3,2.1,8.0,1.8,7.0,98.3,0.31,5.2,0.21,Low
+MS-2026-0251,Sebastian Miller,Female,23,Electrical Engineering,3,3.2,8.3,2.0,7.0,99.9,0.3,8.2,0.23,Low
+MS-2026-0252,Harper Robinson,Female,18,Electrical Engineering,4,8.8,9.2,5.0,5.7,81.6,0.53,2.8,0.38,Low
+MS-2026-0253,Olivia Martinez,Female,21,Electrical Engineering,1,9.1,5.3,7.4,11.1,81.5,0.95,0.1,0.73,High
+MS-2026-0254,Emma Miller,Female,24,Computer Science,2,1.7,8.1,1.4,2.4,62.9,0.18,1.8,0.25,Low
+MS-2026-0255,Lucas Lee,Male,23,Computer Science,4,6.9,7.2,4.4,8.1,84.7,0.6,7.6,0.36,Low
+MS-2026-0256,Abigail Perez,Male,19,Electrical Engineering,4,4.6,8.6,3.1,2.3,66.3,0.35,2.2,0.36,Low
+MS-2026-0257,Sophia Perez,Female,23,Computer Science,2,2.5,4.5,3.2,7.7,81.5,0.62,9.5,0.5,Medium
+MS-2026-0258,Daniel Ramirez,Female,20,Mechanical Engineering,2,6.4,5.8,2.5,3.1,86.8,0.43,5.7,0.4,Medium
+MS-2026-0259,Noah Martinez,Female,22,Computer Science,2,7.3,6.9,4.0,5.1,65.1,0.52,6.6,0.48,Medium
+MS-2026-0260,Harper Perez,Male,20,Psychology,3,8.0,9.3,3.2,3.6,72.5,0.34,7.9,0.25,Low
+MS-2026-0261,James Lewis,Female,25,Electrical Engineering,3,5.4,5.0,7.2,8.1,63.3,0.91,2.8,0.65,Medium
+MS-2026-0262,Gianna Williams,Female,18,Psychology,4,7.7,5.6,4.2,2.3,70.4,0.53,8.9,0.39,Low
+MS-2026-0263,Alexander White,Female,20,Business Analytics,1,4.7,7.0,3.2,8.3,93.9,0.48,8.1,0.34,Low
+MS-2026-0264,Alexander Perez,Female,20,Business Analytics,3,1.8,8.3,2.3,4.2,70.6,0.31,2.3,0.31,Low
+MS-2026-0265,Sebastian Johnson,Male,23,Computer Science,3,8.2,5.8,5.9,7.2,67.0,0.74,6.5,0.63,Medium
+MS-2026-0266,Luna Davis,Female,23,Electrical Engineering,4,7.8,8.9,1.3,2.1,95.3,0.18,4.4,0.1,Low
+MS-2026-0267,Harper Thompson,Female,21,Business Analytics,3,7.3,6.9,6.4,6.5,68.4,0.65,1.6,0.47,Medium
+MS-2026-0268,Daniel Taylor,Male,20,Computer Science,2,3.6,5.4,4.1,11.1,84.0,0.71,5.6,0.51,Medium
+MS-2026-0269,Lucas Martin,Non-Binary,25,Mechanical Engineering,2,8.1,7.5,5.7,9.5,92.8,0.67,1.8,0.52,Medium
+MS-2026-0270,Alexander Williams,Male,24,Mechanical Engineering,1,1.6,7.1,2.9,10.6,87.4,0.5,8.3,0.4,Medium
+MS-2026-0271,Evelyn Taylor,Female,19,Business Analytics,2,8.7,7.2,2.4,2.0,97.5,0.31,6.8,0.3,Low
+MS-2026-0272,Abigail Thomas,Female,24,Electrical Engineering,1,,5.8,5.1,9.3,96.4,0.72,0.8,0.46,Medium
+MS-2026-0273,Liam Jackson,Female,18,Business Analytics,2,7.0,6.1,4.6,5.4,66.2,0.62,6.5,0.47,Medium
+MS-2026-0274,Camila Gonzalez,Female,24,Psychology,4,2.9,7.3,2.2,6.6,99.5,0.38,5.8,0.19,Low
+MS-2026-0275,Charlotte Anderson,Female,20,Computer Science,2,5.6,8.4,2.8,9.6,84.6,0.44,6.8,0.32,Low
+MS-2026-0276,Mia Robinson,Female,19,Computer Science,3,3.3,4.9,2.6,2.4,75.4,0.44,9.8,0.39,Low
+MS-2026-0277,Arthur Garcia,Female,25,Computer Science,2,8.3,9.2,4.3,6.9,67.8,0.49,7.8,0.4,Medium
+MS-2026-0278,Daniel Smith,Non-Binary,19,Electrical Engineering,4,4.3,6.5,2.7,7.6,80.7,0.44,7.4,0.3,Low
+MS-2026-0279,Amelia Lopez,Non-Binary,22,Mechanical Engineering,2,5.1,6.5,3.4,2.0,67.0,0.42,5.1,0.34,Low
+MS-2026-0280,William Lewis,Female,22,Business Analytics,4,6.0,8.3,3.3,9.2,98.4,0.49,4.6,0.24,Low
+MS-2026-0281,Daniel Sanchez,Non-Binary,21,Electrical Engineering,4,9.1,7.1,2.9,2.1,93.3,0.38,2.5,0.34,Low
+MS-2026-0282,Mia Hernandez,Male,22,Mechanical Engineering,2,5.5,5.5,4.5,9.0,94.9,0.65,2.1,0.48,Medium
+MS-2026-0283,Luna Williams,Female,25,Psychology,1,7.6,7.2,3.2,2.4,79.3,0.43,6.2,0.4,Medium
+MS-2026-0284,Ethan Robinson,Female,24,Mechanical Engineering,2,1.9,8.5,1.4,6.5,81.6,0.31,5.0,0.16,Low
+MS-2026-0285,Lucas Hernandez,Female,18,Mechanical Engineering,4,6.1,6.1,4.9,7.8,70.4,0.65,5.5,0.52,Medium
+MS-2026-0286,Elijah Wilson,Female,23,Electrical Engineering,4,3.7,5.4,2.4,3.2,83.0,0.39,2.3,0.27,Low
+MS-2026-0287,Oliver Sanchez,Female,20,Business Analytics,1,2.9,7.0,4.1,11.5,94.0,0.67,5.2,0.4,Medium
+MS-2026-0288,Benjamin Brown,Female,18,Mechanical Engineering,3,,7.6,4.1,6.3,73.4,0.55,3.6,0.37,Low
+MS-2026-0289,Emily Perez,Non-Binary,21,Psychology,2,9.3,5.9,5.0,5.1,80.4,0.57,7.7,0.48,Medium
+MS-2026-0290,Emily Garcia,Female,23,Business Analytics,4,8.3,4.9,5.6,3.5,69.1,0.64,3.2,0.57,Medium
+MS-2026-0291,Emily Lopez,Female,25,Business Analytics,2,3.0,4.6,4.2,8.9,86.5,0.65,9.4,0.42,Medium
+MS-2026-0292,Sebastian Thomas,Female,18,Business Analytics,1,2.3,7.6,1.0,2.8,97.3,0.25,3.9,0.15,Low
+MS-2026-0293,Ava Smith,Male,23,Electrical Engineering,4,5.2,8.9,5.5,10.9,81.9,0.65,1.4,0.48,Medium
+MS-2026-0294,Sebastian Jackson,Male,22,Electrical Engineering,4,5.8,8.5,3.4,6.2,74.6,0.37,2.6,0.36,Low
+MS-2026-0295,Mia Moore,Male,25,Business Analytics,3,1.6,6.7,3.0,4.8,69.2,0.43,0.1,0.36,Low
+MS-2026-0296,Gianna Lee,Male,24,Mechanical Engineering,3,2.1,7.6,2.0,6.9,92.0,0.35,6.1,0.26,Low
+MS-2026-0297,Elijah Ramirez,Male,20,Electrical Engineering,1,6.6,7.6,2.7,4.6,84.9,0.33,1.9,0.27,Low
+MS-2026-0298,William Jones,Female,18,Mechanical Engineering,1,2.7,7.0,3.3,5.2,72.5,0.45,8.0,0.41,Medium
+MS-2026-0299,Oliver Johnson,Male,24,Computer Science,4,3.0,9.0,3.2,4.4,75.3,0.37,0.1,0.28,Low
+MS-2026-0300,Olivia Miller,Male,19,Psychology,2,5.3,7.9,2.2,5.0,72.9,0.38,6.3,0.29,Low
+MS-2026-0301,Elijah Lopez,Female,21,Computer Science,2,6.6,6.1,5.5,3.6,71.0,0.56,1.2,0.42,Medium
+MS-2026-0302,Harper Jones,Male,19,Mechanical Engineering,2,5.5,7.9,1.0,5.2,98.8,0.24,7.6,0.1,Low
+MS-2026-0303,Mia Davis,Male,23,Business Analytics,2,1.7,6.4,5.0,8.9,70.0,0.68,0.4,0.52,Medium
+MS-2026-0304,Evelyn Lopez,Male,25,Electrical Engineering,2,2.1,,2.6,4.8,70.5,0.48,3.7,0.35,Low
+MS-2026-0305,Emily Lopez,Female,21,Electrical Engineering,1,6.8,7.2,4.1,5.7,81.0,0.52,5.0,0.37,Low
+MS-2026-0306,Henry Perez,Male,20,Mechanical Engineering,1,3.1,6.9,1.6,2.9,82.8,0.3,8.4,0.27,Low
+MS-2026-0307,Harper Thompson,Male,21,Business Analytics,1,5.2,7.7,2.7,5.4,89.7,0.42,8.9,0.22,Low
+MS-2026-0308,Gianna Williams,Female,19,Mechanical Engineering,1,2.3,5.7,3.5,5.7,67.7,0.58,6.6,0.45,Medium
+MS-2026-0309,Ethan Lee,Female,25,Business Analytics,1,2.8,5.4,5.2,5.8,73.5,0.66,1.6,0.5,Medium
+MS-2026-0310,James Ramirez,Male,24,Electrical Engineering,2,6.0,5.6,6.1,9.3,97.0,0.78,2.5,0.54,Medium
+MS-2026-0311,Harper Smith,Female,22,Computer Science,3,9.4,5.6,5.1,5.0,90.9,0.67,9.4,0.49,Medium
+MS-2026-0312,Emma Johnson,Male,20,Mechanical Engineering,3,4.4,7.4,2.4,4.2,92.4,0.4,0.9,0.31,Low
+MS-2026-0313,Ava Thomas,Female,19,Psychology,3,1.8,8.5,1.0,5.6,91.2,0.28,9.2,0.16,Low
+MS-2026-0314,Ethan Davis,Female,18,Business Analytics,1,3.9,4.7,4.7,7.1,66.0,0.64,5.0,0.56,Medium
+MS-2026-0315,Harper Jackson,Female,21,Business Analytics,3,7.8,5.2,5.1,5.2,79.0,0.63,7.5,0.49,Medium
+MS-2026-0316,Ethan Jones,Female,21,Business Analytics,4,6.7,5.5,4.6,7.9,89.4,0.69,2.5,0.46,Medium
+MS-2026-0317,Camila Wilson,Male,23,Mechanical Engineering,3,4.3,7.8,5.4,9.3,66.8,0.68,3.5,0.53,Medium
+MS-2026-0318,Charlotte Miller,Female,20,Computer Science,1,7.4,5.7,5.5,7.9,65.9,0.7,8.3,0.6,Medium
+MS-2026-0319,James Miller,Female,21,Mechanical Engineering,3,5.9,7.6,4.3,11.4,87.8,0.67,6.7,0.44,Medium
+MS-2026-0320,Elijah Sanchez,Female,22,Computer Science,4,6.7,4.5,5.6,5.7,70.9,0.76,8.5,0.51,Medium
+MS-2026-0321,Charlotte Gonzalez,Female,19,Electrical Engineering,4,8.4,7.2,5.1,3.8,80.0,0.5,4.6,0.39,Low
+MS-2026-0322,Benjamin White,Male,23,Electrical Engineering,3,6.5,5.7,6.2,11.3,80.1,0.87,8.1,0.68,Medium
+MS-2026-0323,Evelyn Rodriguez,Male,23,Business Analytics,2,2.2,6.4,3.3,11.1,84.5,0.57,6.3,0.34,Low
+MS-2026-0324,James Anderson,Female,21,Mechanical Engineering,2,8.4,6.0,7.7,8.7,81.0,0.92,1.4,0.62,Medium
+MS-2026-0325,James Williams,Female,19,Mechanical Engineering,3,8.2,5.2,5.2,2.3,72.7,0.58,9.7,0.54,Medium
+MS-2026-0326,Gianna Rodriguez,Male,21,Computer Science,2,3.0,8.3,2.5,7.8,70.7,0.37,5.7,0.32,Low
+MS-2026-0327,Mia Jones,Female,25,Electrical Engineering,2,8.3,7.0,5.9,3.3,67.7,0.55,0.3,0.46,Medium
+MS-2026-0328,Elijah Harris,Male,20,Business Analytics,4,7.0,8.8,4.7,10.4,77.1,0.62,7.8,0.47,Medium
+MS-2026-0329,Alexander Martin,Female,18,Psychology,1,5.1,8.6,1.0,2.4,99.8,0.2,5.2,0.14,Low
+MS-2026-0330,Olivia Miller,Male,24,Electrical Engineering,3,5.2,6.6,4.5,7.8,62.2,0.64,5.2,0.48,Medium
+MS-2026-0331,Ethan Jackson,Female,20,Business Analytics,4,4.1,4.6,3.9,6.3,95.9,0.57,9.0,0.4,Medium
+MS-2026-0332,Ava Thompson,Female,19,Computer Science,4,6.6,4.9,5.1,8.7,89.1,0.7,9.8,0.52,Medium
+MS-2026-0333,James Jackson,Female,20,Mechanical Engineering,2,2.9,8.1,2.0,6.0,72.4,0.35,7.7,0.2,Low
+MS-2026-0334,Harper Harris,Male,25,Business Analytics,4,5.8,4.5,6.8,10.4,69.5,0.9,5.9,0.61,Medium
+MS-2026-0335,Evelyn Rodriguez,Female,21,Computer Science,2,2.7,7.8,1.0,2.3,94.2,0.18,6.7,0.21,Low
+MS-2026-0336,Ava Garcia,Female,20,Business Analytics,3,9.0,5.0,5.4,4.8,74.7,0.67,3.8,0.54,Medium
+MS-2026-0337,Michael Ramirez,Male,24,Psychology,2,7.1,7.6,3.5,3.0,89.2,0.4,6.3,0.34,Low
+MS-2026-0338,Sophia Wilson,Female,23,Electrical Engineering,3,8.9,7.6,5.2,6.7,89.2,0.63,5.0,0.41,Medium
+MS-2026-0339,Emma Smith,Male,19,Mechanical Engineering,4,4.8,6.2,4.1,7.3,85.5,0.56,0.1,0.46,Medium
+MS-2026-0340,James Harris,Male,23,Electrical Engineering,4,7.3,7.6,3.6,2.3,67.0,0.41,3.3,0.42,Medium
+MS-2026-0341,Mia Jones,Female,23,Business Analytics,4,8.9,4.8,6.2,7.0,82.6,0.73,6.8,0.59,Medium
+MS-2026-0342,Abigail Lopez,Male,20,Electrical Engineering,1,4.2,6.4,3.7,7.1,66.6,0.51,6.1,0.46,Medium
+MS-2026-0343,Michael Johnson,Male,19,Business Analytics,2,4.5,8.6,2.4,4.9,81.0,0.28,1.8,0.18,Low
+MS-2026-0344,Abigail Thomas,Female,20,Mechanical Engineering,3,8.9,8.2,5.5,7.0,91.0,0.63,1.4,0.52,Medium
+MS-2026-0345,Gianna Johnson,Male,19,Computer Science,3,9.0,7.9,5.1,7.6,63.5,0.6,4.7,0.5,Medium
+MS-2026-0346,Sophia Lee,Female,23,Mechanical Engineering,2,3.8,7.2,3.3,9.3,86.8,0.49,2.7,0.42,Medium
+MS-2026-0347,Evelyn Lopez,Female,22,Mechanical Engineering,3,6.1,5.4,2.7,5.0,95.7,0.43,5.4,0.38,Low
+MS-2026-0348,Noah Wilson,Male,25,Psychology,3,4.0,8.6,3.8,8.8,86.8,0.52,5.3,0.35,Low
+MS-2026-0349,Luna Thompson,Male,25,Electrical Engineering,4,5.3,9.2,1.1,3.4,95.8,0.15,2.6,0.18,Low
+MS-2026-0350,James Anderson,Female,19,Business Analytics,1,4.3,6.8,1.2,3.6,90.7,0.24,6.0,0.24,Low
+MS-2026-0351,Daniel Williams,Female,25,Business Analytics,4,3.4,5.7,2.9,3.5,79.3,0.46,0.7,0.35,Low
+MS-2026-0352,James Moore,Female,20,Computer Science,4,2.4,7.5,2.5,5.1,63.9,0.37,4.5,0.32,Low
+MS-2026-0353,Arthur Gonzalez,Male,18,Computer Science,2,8.0,8.9,5.0,10.6,85.4,0.57,0.0,0.42,Medium
+MS-2026-0354,Elijah Miller,Female,23,Electrical Engineering,3,8.8,9.2,3.4,8.8,96.6,0.46,9.9,0.3,Low
+MS-2026-0355,Olivia Lopez,Female,18,Computer Science,3,2.4,5.9,2.2,2.3,77.3,0.39,5.9,0.29,Low
+MS-2026-0356,Ava Thomas,Male,24,Electrical Engineering,4,2.7,9.5,2.5,8.4,65.4,0.39,0.7,0.28,Low
+MS-2026-0357,Noah Jones,Female,24,Business Analytics,4,6.5,6.8,3.2,6.0,92.8,0.46,3.8,0.25,Low
+MS-2026-0358,Michael Taylor,Male,23,Computer Science,1,6.0,8.0,1.6,3.1,79.3,0.28,6.9,0.29,Low
+MS-2026-0359,Lucas Taylor,Male,19,Mechanical Engineering,4,6.5,,4.2,8.4,87.4,0.56,5.4,0.46,Medium
+MS-2026-0360,Lucas Taylor,Female,23,Business Analytics,3,9.2,8.5,4.9,4.7,61.4,0.52,9.2,0.44,Medium
+MS-2026-0361,Ava Jackson,Male,22,Psychology,1,,4.9,3.3,6.8,94.1,0.55,2.8,0.45,Medium
+MS-2026-0362,Ava Robinson,Female,20,Business Analytics,3,8.0,5.8,6.5,8.7,79.4,0.78,8.0,0.53,Medium
+MS-2026-0363,Oliver Clark,Female,24,Business Analytics,2,6.8,8.1,1.4,3.6,83.1,0.22,8.4,0.23,Low
+MS-2026-0364,Mia Martinez,Female,21,Business Analytics,4,5.3,5.2,6.1,10.3,60.5,0.84,9.3,0.71,High
+MS-2026-0365,Luna Moore,Female,24,Psychology,3,4.2,5.8,3.3,2.9,86.2,0.48,3.9,0.4,Medium
+MS-2026-0366,James Perez,Female,20,Electrical Engineering,1,6.9,8.7,3.6,2.1,63.9,0.32,1.0,0.28,Low
+MS-2026-0367,Noah Johnson,Female,21,Psychology,1,7.2,5.1,7.9,10.1,65.2,0.96,6.6,0.81,High
+MS-2026-0368,William Martinez,Male,19,Business Analytics,3,7.7,8.0,5.2,8.3,90.8,0.59,2.6,0.36,Low
+MS-2026-0369,William Clark,Male,25,Computer Science,4,9.3,5.5,6.3,5.7,85.8,0.73,1.1,0.58,Medium
+MS-2026-0370,William Brown,Male,19,Psychology,3,7.7,4.6,5.6,6.7,86.1,0.73,0.0,0.5,Medium
+MS-2026-0371,Liam Taylor,Female,25,Business Analytics,4,4.7,8.1,5.0,9.7,62.8,0.64,2.3,0.53,Medium
+MS-2026-0372,Amelia Hernandez,Female,24,Computer Science,1,4.4,8.8,1.0,5.2,93.6,0.19,7.6,0.14,Low
+MS-2026-0373,Sophia Thompson,Male,19,Electrical Engineering,4,2.2,7.7,4.6,9.0,65.6,0.6,1.9,0.46,Medium
+MS-2026-0374,Sophia Thomas,Female,25,Computer Science,1,4.2,6.2,5.4,8.8,76.2,0.71,2.1,0.6,Medium
+MS-2026-0375,Gianna Jackson,Male,19,Computer Science,2,5.4,4.6,6.7,10.6,84.7,0.85,2.4,0.66,Medium
+MS-2026-0376,Emma Anderson,Female,19,Computer Science,1,5.5,8.5,2.5,4.1,92.2,0.37,4.3,0.28,Low
+MS-2026-0377,Alexander Moore,Male,21,Computer Science,2,4.2,5.1,3.3,3.3,76.6,0.49,7.0,0.46,Medium
+MS-2026-0378,Emily Lee,Female,20,Computer Science,4,2.1,4.5,4.1,10.8,88.3,0.74,5.9,0.55,Medium
+MS-2026-0379,Oliver Lee,Male,25,Business Analytics,2,9.0,,5.3,2.4,67.2,0.53,5.0,0.5,Medium
+MS-2026-0380,Charlotte Miller,Male,19,Psychology,3,8.4,9.4,3.2,6.8,78.6,0.34,6.3,0.21,Low
+MS-2026-0381,Luna Thomas,Female,20,Computer Science,1,6.7,5.9,5.2,6.1,73.4,0.6,8.1,0.53,Medium
+MS-2026-0382,Abigail Smith,Female,19,Computer Science,2,7.3,7.5,3.9,5.1,68.0,0.5,6.8,0.37,Low
+MS-2026-0383,Emily Miller,Male,21,Computer Science,4,6.2,4.8,4.9,6.1,68.6,0.66,6.1,0.52,Medium
+MS-2026-0384,William Miller,Male,18,Psychology,1,3.7,5.1,3.3,6.4,76.7,0.53,7.6,0.35,Low
+MS-2026-0385,Sebastian Garcia,Female,21,Computer Science,4,8.4,6.9,5.5,11.5,83.7,0.76,8.4,0.57,Medium
+MS-2026-0386,Alexander Davis,Female,20,Psychology,1,4.8,4.7,5.6,11.4,89.3,0.82,5.0,0.63,Medium
+MS-2026-0387,Mia Davis,Male,18,Business Analytics,2,2.6,6.0,4.2,8.2,63.6,0.64,4.8,0.54,Medium
+MS-2026-0388,Lucas Anderson,Female,24,Mechanical Engineering,3,6.5,8.0,2.8,2.0,85.1,0.32,3.8,0.23,Low
+MS-2026-0389,Harper Moore,Female,21,Computer Science,3,7.4,4.8,5.4,11.0,87.0,0.79,8.9,0.58,Medium
+MS-2026-0390,Evelyn Thompson,Male,21,Mechanical Engineering,3,3.4,5.1,3.9,6.5,97.6,0.57,5.8,0.45,Medium
+MS-2026-0391,William Taylor,Female,22,Computer Science,1,4.5,6.8,3.1,6.8,93.2,0.51,4.7,0.41,Medium
+MS-2026-0392,Camila Thompson,Female,19,Mechanical Engineering,4,2.2,6.5,1.0,3.7,98.3,0.25,0.8,0.12,Low
+MS-2026-0393,Daniel Smith,Male,20,Business Analytics,3,4.9,8.2,3.7,2.2,67.6,0.41,0.2,0.35,Low
+MS-2026-0394,Daniel Lee,Female,25,Psychology,4,5.2,7.3,4.2,10.5,72.3,0.6,7.9,0.41,Medium
+MS-2026-0395,Sophia Anderson,Female,20,Psychology,3,3.0,5.4,2.4,8.7,96.2,0.49,7.9,0.41,Medium
+MS-2026-0396,Amelia Garcia,Male,18,Electrical Engineering,3,2.7,6.7,3.9,11.3,81.3,0.67,1.2,0.49,Medium
+MS-2026-0397,Oliver Smith,Non-Binary,23,Electrical Engineering,4,8.7,9.3,4.2,9.2,99.8,0.53,6.7,0.41,Medium
+MS-2026-0398,Mia Lewis,Male,19,Electrical Engineering,1,4.7,8.7,4.4,6.2,63.7,0.49,0.6,0.35,Low
+MS-2026-0399,Liam Williams,Female,25,Computer Science,4,3.1,6.1,2.0,7.7,97.7,0.41,9.1,0.33,Low
+MS-2026-0400,Sophia Lopez,Male,25,Psychology,1,3.2,8.9,2.4,9.0,76.6,0.41,4.4,0.34,Low
+MS-2026-0401,Arthur Jackson,Female,20,Mechanical Engineering,3,5.3,8.8,5.1,11.4,62.6,0.59,9.6,0.44,Medium
+MS-2026-0402,Evelyn Anderson,Female,20,Mechanical Engineering,2,8.2,5.9,5.4,6.7,92.9,0.68,3.0,0.54,Medium
+MS-2026-0403,Oliver Rodriguez,Male,25,Computer Science,3,4.8,7.0,4.9,8.5,69.8,0.68,1.2,0.43,Medium
+MS-2026-0404,Alexander Wilson,Female,25,Computer Science,3,5.6,7.4,5.8,10.0,66.5,0.75,0.6,0.5,Medium
+MS-2026-0405,Isabella Lee,Female,23,Computer Science,3,3.8,7.7,2.7,2.7,67.8,0.34,6.3,0.24,Low
+MS-2026-0406,Emily Perez,Female,22,Electrical Engineering,1,5.8,6.3,5.1,3.4,65.5,0.56,2.8,0.55,Medium
+MS-2026-0407,Henry Davis,Female,19,Business Analytics,4,8.8,5.1,6.8,3.2,60.7,0.7,3.5,0.61,Medium
+MS-2026-0408,James Garcia,Female,18,Computer Science,2,2.5,,4.6,8.5,72.3,0.56,2.1,0.47,Medium
+MS-2026-0409,Mia Harris,Male,21,Computer Science,1,7.8,7.1,3.9,2.6,64.8,0.46,2.5,0.43,Medium
+MS-2026-0410,Elijah Jackson,Female,20,Electrical Engineering,1,2.2,8.7,1.7,10.9,98.0,0.39,3.5,0.26,Low
+MS-2026-0411,Emma Clark,Female,18,Psychology,2,7.2,9.3,3.3,3.6,90.2,0.37,0.0,0.34,Low
+MS-2026-0412,Michael Jackson,Male,19,Mechanical Engineering,3,9.4,6.6,5.2,6.9,76.3,0.63,7.6,0.49,Medium
+MS-2026-0413,Sophia Moore,Female,19,Electrical Engineering,4,2.4,5.9,3.1,7.7,72.5,0.54,9.8,0.37,Low
+MS-2026-0414,Noah Lewis,Female,25,Electrical Engineering,2,1.6,7.9,3.0,8.4,75.9,0.42,5.2,0.3,Low
+MS-2026-0415,Gianna Robinson,Female,20,Computer Science,3,9.3,6.2,6.4,7.7,99.6,0.78,1.2,0.52,Medium
+MS-2026-0416,William Harris,Female,24,Electrical Engineering,4,6.8,9.3,5.1,11.4,80.5,0.58,1.5,0.42,Medium
+MS-2026-0417,Liam Brown,Female,19,Business Analytics,1,9.3,6.4,6.0,8.5,66.1,0.69,6.2,0.6,Medium
+MS-2026-0418,Elijah Martinez,Female,25,Psychology,3,5.8,8.5,5.0,7.1,60.7,0.59,7.6,0.4,Medium
+MS-2026-0419,Lucas Anderson,Male,20,Psychology,3,8.6,5.3,6.9,6.1,72.5,0.8,3.9,0.63,Medium
+MS-2026-0420,Mia Thomas,Female,20,Psychology,1,4.6,7.0,5.9,11.2,84.7,0.74,3.5,0.46,Medium
+MS-2026-0421,Amelia Sanchez,Female,18,Electrical Engineering,4,2.3,6.2,2.2,5.4,74.1,0.43,6.6,0.34,Low
+MS-2026-0422,Sophia Brown,Male,18,Psychology,3,1.8,7.8,1.0,6.0,80.6,0.27,4.2,0.12,Low
+MS-2026-0423,James Jackson,Male,25,Computer Science,2,4.2,7.0,4.1,9.3,73.6,0.59,6.1,0.43,Medium
+MS-2026-0424,Arthur Ramirez,Female,22,Electrical Engineering,1,3.9,7.4,3.5,9.6,85.0,0.55,9.6,0.39,Low
+MS-2026-0425,Henry Thomas,Male,23,Computer Science,3,5.5,6.0,5.0,8.3,72.5,0.68,4.1,0.54,Medium
+MS-2026-0426,Daniel Thompson,Female,20,Psychology,4,3.2,9.3,2.1,9.1,78.7,0.37,9.4,0.29,Low
+MS-2026-0427,Daniel Johnson,Female,23,Business Analytics,2,3.4,8.2,3.5,9.3,93.8,0.54,4.1,0.37,Low
+MS-2026-0428,Sophia Lee,Male,21,Business Analytics,2,2.4,5.5,2.3,4.3,93.1,0.42,4.6,0.33,Low
+MS-2026-0429,Oliver Smith,Male,22,Psychology,2,6.7,4.7,7.1,8.9,91.3,0.87,0.6,0.61,Medium
+MS-2026-0430,Sebastian Lopez,Female,19,Business Analytics,2,3.4,7.4,3.6,6.8,64.8,0.52,6.6,0.4,Medium
+MS-2026-0431,Harper Brown,Female,23,Electrical Engineering,4,7.9,8.2,6.2,10.9,68.7,0.7,1.1,0.52,Medium
+MS-2026-0432,Evelyn Lopez,Female,19,Electrical Engineering,4,5.3,5.7,3.8,4.6,91.4,0.52,1.4,0.36,Low
+MS-2026-0433,Olivia Clark,Female,18,Mechanical Engineering,3,5.9,6.0,5.0,11.1,74.5,0.77,8.1,0.6,Medium
+MS-2026-0434,Benjamin Robinson,Non-Binary,22,Electrical Engineering,1,9.0,8.3,3.8,4.8,94.4,0.41,1.6,0.36,Low
+MS-2026-0435,William Ramirez,Male,25,Business Analytics,4,8.9,6.2,4.6,6.0,96.7,0.57,1.0,0.35,Low
+MS-2026-0436,Evelyn White,Male,18,Computer Science,2,6.5,8.5,2.2,3.3,76.0,0.24,6.3,0.16,Low
+MS-2026-0437,Arthur Lee,Female,24,Electrical Engineering,4,5.3,8.2,2.3,4.5,87.5,0.29,8.3,0.21,Low
+MS-2026-0438,Arthur Lewis,Female,18,Computer Science,2,8.8,9.4,3.1,3.9,88.1,0.31,1.7,0.21,Low
+MS-2026-0439,Alexander Brown,Male,24,Business Analytics,4,2.4,8.1,1.0,3.8,94.5,0.22,7.8,0.09,Low
+MS-2026-0440,Arthur Martinez,Female,21,Business Analytics,2,4.8,,5.1,4.8,70.5,0.63,6.2,0.54,Medium
+MS-2026-0441,Oliver Ramirez,Male,24,Mechanical Engineering,4,7.2,8.2,4.5,4.4,63.8,0.45,0.6,0.46,Medium
+MS-2026-0442,Abigail Martin,Female,18,Computer Science,3,5.5,6.4,6.6,11.3,86.9,0.79,1.3,0.53,Medium
+MS-2026-0443,James Lewis,Male,19,Electrical Engineering,4,2.6,5.1,3.3,2.4,65.1,0.5,8.7,0.48,Medium
+MS-2026-0444,Harper Clark,Female,22,Psychology,3,5.0,5.3,4.8,9.0,79.7,0.75,9.5,0.55,Medium
+MS-2026-0445,Olivia Davis,Male,25,Electrical Engineering,2,7.1,6.7,5.7,11.5,97.1,0.78,0.4,0.52,Medium
+MS-2026-0446,Emily Jones,Male,19,Mechanical Engineering,3,2.9,5.3,3.8,6.8,70.9,0.6,8.9,0.53,Medium
+MS-2026-0447,Isabella Robinson,Male,25,Computer Science,3,1.7,7.9,3.5,8.5,75.8,0.53,5.9,0.32,Low
+MS-2026-0448,Camila Thomas,Male,22,Psychology,1,4.1,4.7,5.3,7.9,78.1,0.78,9.5,0.62,Medium
+MS-2026-0449,Abigail Lee,Male,18,Computer Science,4,2.2,5.8,1.2,4.3,90.8,0.31,4.0,0.21,Low
+MS-2026-0450,Daniel Jones,Male,25,Business Analytics,3,8.7,7.5,5.0,5.4,63.8,0.55,3.7,0.44,Medium
+MS-2026-0451,Noah Harris,Male,23,Psychology,2,5.0,6.6,2.5,2.4,73.7,0.38,4.6,0.26,Low
+MS-2026-0452,Henry Williams,Male,24,Computer Science,4,3.9,9.4,3.3,8.5,72.0,0.43,2.5,0.33,Low
+MS-2026-0453,Henry Wilson,Male,25,Psychology,3,4.3,7.4,4.6,9.3,60.7,0.64,7.4,0.54,Medium
+MS-2026-0454,Michael Martinez,Male,25,Business Analytics,3,4.2,,5.5,9.7,68.4,0.59,0.8,0.49,Medium
+MS-2026-0455,Benjamin Brown,Male,25,Business Analytics,4,8.5,9.3,5.1,7.7,79.5,0.53,6.2,0.43,Medium
+MS-2026-0456,Sophia Williams,Male,18,Mechanical Engineering,1,8.0,8.0,3.9,3.8,61.1,0.4,4.8,0.42,Medium
+MS-2026-0457,Noah Martinez,Female,20,Business Analytics,4,1.7,5.3,1.1,3.4,88.1,0.37,9.6,0.27,Low
+MS-2026-0458,Arthur Gonzalez,Male,18,Computer Science,4,9.3,8.7,4.6,9.0,83.8,0.55,5.5,0.4,Medium
+MS-2026-0459,Camila Lewis,Female,25,Mechanical Engineering,1,5.7,6.6,3.9,5.0,62.5,0.51,8.9,0.42,Medium
+MS-2026-0460,Michael Wilson,Male,22,Mechanical Engineering,4,4.3,5.7,3.0,4.1,96.4,0.5,3.4,0.38,Low
+MS-2026-0461,Michael Gonzalez,Female,23,Business Analytics,2,6.5,5.9,5.2,9.1,86.7,0.72,1.3,0.45,Medium
+MS-2026-0462,Sophia Davis,Male,18,Computer Science,3,8.5,6.3,2.4,3.5,93.1,0.34,8.9,0.26,Low
+MS-2026-0463,Charlotte Thomas,Male,23,Electrical Engineering,1,7.7,7.3,4.8,10.5,94.1,0.61,8.7,0.36,Low
+MS-2026-0464,Arthur Harris,Male,19,Psychology,1,8.1,4.7,5.0,3.0,85.2,0.59,8.7,0.45,Medium
+MS-2026-0465,Gianna Ramirez,Male,23,Electrical Engineering,2,2.5,5.5,5.7,11.2,90.8,0.8,0.1,0.53,Medium
+MS-2026-0466,Michael Harris,Male,21,Mechanical Engineering,4,7.8,5.2,5.1,6.1,96.7,0.67,9.0,0.52,Medium
+MS-2026-0467,Ethan Smith,Female,19,Computer Science,3,4.0,9.4,2.0,3.6,62.5,0.25,7.6,0.29,Low
+MS-2026-0468,Michael Sanchez,Female,22,Business Analytics,4,8.6,8.0,5.3,10.3,88.9,0.69,3.1,0.54,Medium
+MS-2026-0469,Benjamin Anderson,Female,25,Electrical Engineering,4,7.7,8.9,3.2,2.8,81.5,0.36,3.9,0.29,Low
+MS-2026-0470,Henry Moore,Male,23,Mechanical Engineering,1,1.7,8.5,2.5,7.6,69.7,0.44,7.7,0.25,Low
+MS-2026-0471,Daniel Taylor,Male,18,Computer Science,4,3.9,8.2,2.1,6.3,99.3,0.35,8.1,0.29,Low
+MS-2026-0472,Harper Davis,Male,22,Psychology,2,7.2,7.1,4.8,4.4,73.1,0.53,5.8,0.37,Low
+MS-2026-0473,Noah Williams,Male,20,Business Analytics,2,5.1,6.3,3.8,7.0,83.5,0.53,5.2,0.4,Medium
+MS-2026-0474,Luna Thomas,Female,24,Mechanical Engineering,2,5.5,6.9,3.0,6.3,98.7,0.48,5.1,0.31,Low
+MS-2026-0475,Evelyn Lopez,Female,19,Psychology,4,2.4,6.3,2.6,4.8,80.9,0.41,1.2,0.29,Low
+MS-2026-0476,Abigail Jackson,Male,22,Electrical Engineering,2,3.0,8.2,1.0,2.0,81.9,0.18,0.7,0.12,Low
+MS-2026-0477,Benjamin Thomas,Female,20,Mechanical Engineering,4,7.6,7.8,3.8,3.4,89.1,0.43,0.9,0.31,Low
+MS-2026-0478,Olivia Perez,Female,22,Computer Science,2,7.2,7.4,4.1,9.6,88.3,0.59,5.6,0.36,Low
+MS-2026-0479,Olivia Jackson,Female,25,Psychology,1,2.5,9.2,1.0,3.7,60.8,0.2,7.9,0.24,Low
+MS-2026-0480,Harper Hernandez,Male,18,Business Analytics,1,4.2,5.4,2.2,2.2,81.1,0.43,3.8,0.33,Low
+MS-2026-0481,Ethan Williams,Male,24,Mechanical Engineering,1,6.4,6.1,4.1,2.3,62.3,0.48,3.9,0.4,Medium
+MS-2026-0482,Emma Johnson,Male,21,Business Analytics,4,,5.8,5.1,5.0,82.1,0.64,0.7,0.56,Medium
+MS-2026-0483,Alexander Perez,Male,20,Electrical Engineering,4,5.1,8.7,3.0,6.8,91.3,0.36,1.4,0.22,Low
+MS-2026-0484,Evelyn Anderson,Male,25,Psychology,3,6.7,5.3,3.1,2.6,96.9,0.47,2.7,0.43,Medium
+MS-2026-0485,Arthur Taylor,Male,20,Psychology,1,3.9,6.5,2.7,3.2,65.6,0.39,5.6,0.35,Low
+MS-2026-0486,Camila Hernandez,Female,25,Electrical Engineering,2,6.8,,4.3,4.0,98.4,0.5,3.3,0.45,Medium
+MS-2026-0487,Liam Perez,Male,25,Business Analytics,1,7.8,7.7,4.1,2.7,61.2,0.45,8.3,0.37,Low
+MS-2026-0488,Amelia Gonzalez,Male,18,Computer Science,4,4.5,5.5,2.4,2.1,89.7,0.41,7.6,0.26,Low
+MS-2026-0489,Abigail Thompson,Male,25,Electrical Engineering,1,3.7,9.0,4.5,8.7,68.4,0.52,2.0,0.46,Medium
+MS-2026-0490,Evelyn Miller,Female,20,Computer Science,2,7.5,5.1,6.1,10.9,94.2,0.82,8.8,0.64,Medium
+MS-2026-0491,Camila Moore,Female,25,Computer Science,4,6.6,9.2,2.3,2.5,97.6,0.22,4.3,0.2,Low
+MS-2026-0492,Ethan Johnson,Female,21,Computer Science,3,8.8,7.2,5.9,5.0,75.7,0.66,3.3,0.59,Medium
+MS-2026-0493,Noah Robinson,Male,20,Electrical Engineering,3,2.0,7.6,2.4,2.3,77.3,0.35,0.2,0.33,Low
+MS-2026-0494,James Clark,Male,23,Psychology,2,9.0,8.4,4.5,7.9,90.6,0.5,6.3,0.3,Low
+MS-2026-0495,Emily Thompson,Male,20,Computer Science,4,1.9,7.6,2.6,6.1,64.1,0.43,0.6,0.32,Low
+MS-2026-0496,Emily Martin,Female,18,Business Analytics,4,5.2,6.6,5.3,7.9,64.1,0.62,6.5,0.51,Medium
+MS-2026-0497,Liam Martin,Female,21,Psychology,2,6.6,5.8,3.9,6.0,89.0,0.59,4.4,0.35,Low
+MS-2026-0498,Daniel Harris,Male,20,Mechanical Engineering,4,4.0,6.2,4.6,5.5,60.3,0.54,5.9,0.47,Medium
+MS-2026-0499,Isabella Lopez,Male,21,Mechanical Engineering,1,4.2,7.8,2.2,8.6,99.3,0.42,6.0,0.33,Low
+MS-2026-0500,Ava Brown,Male,18,Business Analytics,2,8.9,7.7,6.0,8.6,78.7,0.71,2.1,0.58,Medium
+MS-2026-0501,Benjamin Garcia,Female,18,Electrical Engineering,1,2.1,4.7,3.7,3.1,71.6,0.56,1.9,0.37,Low
+MS-2026-0502,Ava Davis,Female,20,Electrical Engineering,2,2.9,4.6,5.4,10.0,96.4,0.78,0.2,0.59,Medium
+MS-2026-0503,Sophia Anderson,Male,23,Mechanical Engineering,4,8.5,4.8,3.4,3.4,97.0,0.5,7.9,0.36,Low
+MS-2026-0504,Charlotte Robinson,Male,21,Psychology,3,7.8,6.1,3.6,2.5,91.8,0.5,8.7,0.43,Medium
+MS-2026-0505,Mia Sanchez,Female,19,Mechanical Engineering,4,7.5,7.7,4.1,6.8,79.9,0.5,4.6,0.41,Medium
+MS-2026-0506,William Jackson,Male,18,Mechanical Engineering,2,8.7,6.8,5.0,4.2,68.7,0.53,4.3,0.51,Medium
+MS-2026-0507,Ethan Williams,Male,23,Mechanical Engineering,1,5.2,7.6,4.1,6.0,78.7,0.48,4.1,0.36,Low
+MS-2026-0508,Daniel Williams,Male,19,Electrical Engineering,1,7.8,9.1,3.6,2.9,62.9,0.32,0.4,0.28,Low
+MS-2026-0509,Camila Ramirez,Male,20,Psychology,3,1.6,6.0,3.2,9.8,91.3,0.59,4.0,0.42,Medium
+MS-2026-0510,Ethan Jones,Female,21,Mechanical Engineering,2,5.3,7.1,3.7,9.5,90.3,0.59,7.2,0.36,Low
+MS-2026-0511,Michael Wilson,Male,25,Psychology,1,4.5,7.4,2.8,3.2,97.7,0.4,0.1,0.25,Low
+MS-2026-0512,Benjamin Harris,Female,22,Electrical Engineering,1,6.0,4.7,2.7,3.3,99.1,0.5,9.9,0.42,Medium
+MS-2026-0513,Benjamin Miller,Female,19,Psychology,4,3.0,5.0,2.9,7.4,78.1,0.51,8.9,0.4,Medium
+MS-2026-0514,Mia Smith,Male,19,Business Analytics,3,3.1,6.0,2.9,7.0,78.2,0.49,3.7,0.43,Medium
+MS-2026-0515,Oliver Moore,Male,19,Business Analytics,2,2.5,5.5,3.2,6.1,88.4,0.57,4.7,0.41,Medium
+MS-2026-0516,William Miller,Male,20,Business Analytics,1,8.1,7.5,4.2,4.3,73.2,0.48,5.7,0.32,Low
+MS-2026-0517,Luna Anderson,Male,22,Business Analytics,2,4.8,5.4,5.5,7.9,77.3,0.75,3.8,0.49,Medium
+MS-2026-0518,Sebastian Ramirez,Male,22,Computer Science,2,8.8,6.6,7.7,9.2,64.8,0.86,3.7,0.72,High
+MS-2026-0519,Elijah Taylor,Male,18,Computer Science,4,4.5,8.2,4.1,10.1,75.9,0.6,0.1,0.39,Low
+MS-2026-0520,Noah Williams,Female,21,Business Analytics,2,5.3,5.9,2.0,3.5,93.5,0.34,6.1,0.3,Low
+MS-2026-0521,Liam Perez,Male,25,Electrical Engineering,2,3.2,4.7,5.6,8.4,68.6,0.8,7.0,0.63,Medium
+MS-2026-0522,Benjamin Thompson,Male,18,Psychology,1,,6.4,1.3,3.9,70.0,0.26,9.1,0.16,Low
+MS-2026-0523,Camila Perez,Male,19,Mechanical Engineering,2,1.9,7.1,3.8,9.7,72.9,0.62,6.3,0.42,Medium
+MS-2026-0524,Emma Lopez,Male,18,Business Analytics,3,1.6,5.6,2.6,4.1,86.3,0.39,2.8,0.38,Low
+MS-2026-0525,Mia Brown,Female,20,Electrical Engineering,1,6.3,9.4,3.0,8.6,87.1,0.39,9.7,0.29,Low
+MS-2026-0526,Emily Perez,Female,23,Computer Science,4,4.6,7.7,1.1,4.2,83.5,0.26,9.9,0.25,Low
+MS-2026-0527,Ethan Davis,Female,18,Mechanical Engineering,3,5.5,5.5,4.9,5.6,85.7,0.68,2.4,0.49,Medium
+MS-2026-0528,James Lee,Female,18,Psychology,4,6.7,5.9,2.7,2.2,93.9,0.4,3.3,0.37,Low
+MS-2026-0529,Camila Thompson,Female,24,Psychology,3,3.0,7.6,1.0,2.6,79.7,0.27,9.5,0.27,Low
+MS-2026-0530,Evelyn Clark,Female,21,Mechanical Engineering,1,4.9,6.8,3.8,3.6,67.9,0.45,4.2,0.4,Medium
+MS-2026-0531,Emily Sanchez,Female,23,Business Analytics,4,2.8,6.7,2.8,6.8,89.4,0.49,7.6,0.26,Low
+MS-2026-0532,Ethan Robinson,Female,20,Psychology,2,3.6,6.8,2.4,6.3,75.0,0.39,6.1,0.3,Low
+MS-2026-0533,Liam Ramirez,Female,23,Business Analytics,4,8.9,9.2,6.1,11.2,74.9,0.69,4.9,0.49,Medium
+MS-2026-0534,Benjamin Robinson,Female,21,Business Analytics,3,7.7,8.3,2.9,5.3,88.4,0.33,6.3,0.24,Low
+MS-2026-0535,Mia Johnson,Female,23,Computer Science,2,3.6,6.8,5.1,8.5,70.2,0.69,6.0,0.43,Medium
+MS-2026-0536,Luna Gonzalez,Male,19,Psychology,2,8.5,5.3,5.5,6.1,87.7,0.73,5.0,0.55,Medium
+MS-2026-0537,Luna White,Female,19,Psychology,3,8.0,5.8,3.0,4.0,89.9,0.42,7.0,0.33,Low
+MS-2026-0538,Isabella Taylor,Male,22,Business Analytics,2,2.9,5.4,1.9,3.3,79.5,0.39,5.0,0.26,Low
+MS-2026-0539,Abigail Harris,Male,24,Business Analytics,1,8.4,5.3,5.7,4.8,75.1,0.69,2.8,0.55,Medium
+MS-2026-0540,Olivia Rodriguez,Female,18,Psychology,1,2.3,7.1,1.0,2.1,84.1,0.27,9.9,0.19,Low
+MS-2026-0541,Amelia Perez,Female,23,Mechanical Engineering,3,6.8,6.4,3.3,2.5,74.2,0.42,3.3,0.39,Low
+MS-2026-0542,Oliver Smith,Female,22,Mechanical Engineering,3,5.1,7.9,3.2,10.3,80.6,0.53,6.6,0.43,Medium
+MS-2026-0543,Emily Johnson,Non-Binary,23,Business Analytics,2,6.4,6.5,6.7,7.8,63.3,0.81,4.3,0.7,High
+MS-2026-0544,Gianna Gonzalez,Male,21,Mechanical Engineering,1,2.5,8.5,1.8,4.9,86.9,0.25,5.5,0.18,Low
+MS-2026-0545,Charlotte Davis,Male,19,Computer Science,4,9.4,4.6,8.0,10.8,73.1,1.0,3.8,0.78,High
+MS-2026-0546,Camila Jones,Female,25,Computer Science,3,8.5,9.2,4.2,9.3,84.0,0.53,6.4,0.41,Medium
+MS-2026-0547,Evelyn Ramirez,Male,21,Mechanical Engineering,3,2.4,4.9,1.9,2.8,89.6,0.35,9.4,0.26,Low
+MS-2026-0548,Alexander White,Male,18,Psychology,2,8.3,9.4,4.0,5.0,74.6,0.41,6.8,0.35,Low
+MS-2026-0549,Evelyn Ramirez,Male,20,Electrical Engineering,2,5.5,6.8,5.4,7.7,65.8,0.68,6.7,0.54,Medium
+MS-2026-0550,Emma Rodriguez,Non-Binary,25,Mechanical Engineering,4,3.8,9.3,1.2,2.6,92.4,0.2,1.5,0.2,Low
+MS-2026-0184,Gianna Lee,Male,23,Mechanical Engineering,4,8.8,6.1,7.4,9.8,82.9,0.83,1.2,0.59,Medium
+MS-2026-0500,Ava Brown,Male,18,Business Analytics,2,8.9,7.7,6.0,8.6,78.7,0.71,2.1,0.58,Medium
+MS-2026-0402,Evelyn Anderson,Female,20,Mechanical Engineering,2,8.2,5.9,5.4,6.7,92.9,0.68,3.0,0.54,Medium
+MS-2026-0307,Harper Thompson,Male,21,Business Analytics,1,5.2,7.7,2.7,5.4,89.7,0.42,8.9,0.22,Low
+MS-2026-0164,Ava Moore,Male,22,Mechanical Engineering,2,4.0,6.8,2.5,2.5,74.4,0.38,0.1,0.38,Low
