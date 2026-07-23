@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel - MindSpace{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Administrative Oversight & System Hub</h2>
+            <p class="text-secondary small mb-0">ML model controls, audit trails, and platform configurations</p>
+        </div>
+    </div>
+
+    <!-- Stats summary grid -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-between">
+                <div>
+                    <span class="stat-card-title d-block mb-1">Database Records</span>
+                    <span class="fs-3 fw-bold text-dark">{{ total_students }}</span>
+                </div>
+                <div class="fs-2 text-primary opacity-50"><i class="bi bi-hdd-network"></i></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-between">
+                <div>
+                    <span class="stat-card-title d-block mb-1">High Risk Students</span>
+                    <span class="fs-3 fw-bold text-danger">{{ high_risk }}</span>
+                </div>
+                <div class="fs-2 text-danger opacity-50"><i class="bi bi-exclamation-octagon"></i></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-between">
+                <div>
+                    <span class="stat-card-title d-block mb-1">Database Size</span>
+                    <span class="fs-3 fw-bold text-dark">{{ db_size }}</span>
+                </div>
+                <div class="fs-2 text-secondary opacity-50"><i class="bi bi-file-earmark-binary"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <!-- Machine Learning Model Training Panel -->
+        <div class="col-lg-5">
+            <div class="glass-card h-100">
+                <h5 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-cpu-fill text-primary me-2"></i>ML Model Operations</h5>
+                <p class="text-secondary small mb-4">
+                    The Student Burnout Predictor uses a Scikit-Learn Random Forest Classifier trained on academic indicators, sleep, and screen times. Re-run training to incorporate newly updated or added database records.
+                </p>
+                
+                <div class="p-3 border rounded-3 mb-4 bg-white bg-opacity-25" style="border-color: var(--glass-border) !important;">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="small fw-semibold text-secondary">Classifier Algorithm</span>
+                        <span class="badge bg-secondary rounded-pill">Random Forest</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="small fw-semibold text-secondary">Hyperparameters</span>
+                        <span class="badge bg-light text-dark rounded-pill">n_est=100, depth=8</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="small fw-semibold text-secondary">Target Output Categories</span>
+                        <span class="badge bg-success rounded-pill">Low / Med / High</span>
+                    </div>
+                </div>
+
+                <form method="POST" action="{{ url_for('admin.retrain') }}" onsubmit="showToast('Model training triggered in background...', 'info');">
+                    <button type="submit" class="btn btn-glass-primary w-100 py-2 d-flex align-items-center justify-content-center gap-2">
+                        <i class="bi bi-arrow-repeat fs-5"></i> Retrain Machine Learning Model
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- System Configuration & Data Exports -->
+        <div class="col-lg-7">
+            <div class="glass-card h-100">
+                <h5 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-file-earmark-arrow-down-fill text-secondary me-2"></i>Institutional Data Exports</h5>
+                <p class="text-secondary small mb-4">
+                    Download full student datasets. Data is filtered to your search definitions and exported in production formats with formatting metadata.
+                </p>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded-3 text-center bg-white bg-opacity-50 h-100 border-light d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-filetype-csv text-primary fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark small d-block mb-1">CSV Raw Data</span>
+                                <p class="text-muted small mb-3" style="font-size: 0.7rem;">Unformatted comma-separated raw values</p>
+                            </div>
+                            <a href="{{ url_for('admin.export_csv') }}" class="btn btn-glass-outline w-100 py-1 btn-sm">Export CSV</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded-3 text-center bg-white bg-opacity-50 h-100 border-light d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-file-earmark-excel-fill text-success fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark small d-block mb-1">Formatted Excel</span>
+                                <p class="text-muted small mb-3" style="font-size: 0.7rem;">Stylized auto-sized sheets with header blocks</p>
+                            </div>
+                            <a href="{{ url_for('admin.export_excel') }}" class="btn btn-glass-outline w-100 py-1 btn-sm">Export Excel</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded-3 text-center bg-white bg-opacity-50 h-100 border-light d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark small d-block mb-1">Executive PDF</span>
+                                <p class="text-muted small mb-3" style="font-size: 0.7rem;">ReportLab styled printing tables layout</p>
+                            </div>
+                            <a href="{{ url_for('admin.export_pdf') }}" class="btn btn-glass-outline w-100 py-1 btn-sm">Export PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security & Audit Trails -->
+    <div class="glass-card">
+        <h5 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-shield-check text-primary me-2"></i>Security Audit Log</h5>
+        <div class="table-responsive">
+            <table class="table glass-table align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Timestamp (UTC)</th>
+                        <th scope="col">Operator</th>
+                        <th scope="col">Action</th>
+                        <th scope="col">Operation Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if recent_logs %}
+                        {% for log in recent_logs %}
+                        <tr>
+                            <td class="small">{{ log.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                            <td>
+                                <strong class="small text-dark">{{ log.user.name if log.user else 'System' }}</strong>
+                                <span class="d-block text-muted" style="font-size: 0.7rem;">{{ log.user.email if log.user else '' }}</span>
+                            </td>
+                            <td>
+                                <span class="badge rounded-pill bg-secondary bg-opacity-10 text-secondary py-1 px-2 fw-bold" style="font-size: 0.7rem;">{{ log.action }}</span>
+                            </td>
+                            <td class="text-secondary small">{{ log.details }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="4" class="text-center py-4 text-muted">No audit trails recorded</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

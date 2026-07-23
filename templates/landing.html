@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to MindSpace - Student Burnout Trend Analysis{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Hero Section -->
+    <section class="landing-hero text-center position-relative">
+        <div class="row align-items-center justify-content-center py-5">
+            <div class="col-lg-8">
+                <div class="badge-glass-success mb-3 d-inline-block px-3 py-2 fw-semibold">
+                    <i class="bi bi-rocket-takeoff me-2"></i>SaaS Analytics for Higher Education
+                </div>
+                <h1 class="hero-title mb-3">
+                    Analyze, Predict, and Manage Student Burnout Trends
+                </h1>
+                <p class="text-secondary fs-5 mb-5 mx-auto" style="max-width: 680px;">
+                    MindSpace is a capstone-quality analytical platform that helps universities identify stress patterns, predict burnout using Machine Learning, and intervene early with personalized recommendations.
+                </p>
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('main.dashboard') }}" class="btn btn-glass-primary px-4 py-3 fs-6">
+                            Go to Analytics Hub <i class="bi bi-arrow-right-short ms-1"></i>
+                        </a>
+                    {% else %}
+                        <a href="{{ url_for('main.register') }}" class="btn btn-glass-primary px-4 py-3 fs-6">
+                            Get Started Now <i class="bi bi-arrow-right-short ms-1"></i>
+                        </a>
+                        <a href="{{ url_for('main.login') }}" class="btn btn-glass-outline px-4 py-3 fs-6">
+                            Administrator Login
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="glass-card text-center">
+                    <div class="card-icon mx-auto"><i class="bi bi-people-fill text-primary"></i></div>
+                    <div class="stat-card-value text-primary">{{ metrics.total_students if metrics else '500+' }}</div>
+                    <div class="stat-card-title">Enrolled Students Cleaned</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="glass-card text-center">
+                    <div class="card-icon mx-auto"><i class="bi bi-exclamation-octagon-fill text-danger"></i></div>
+                    <div class="stat-card-value text-danger">{{ metrics.high_risk_pct if metrics else '14.5' }}%</div>
+                    <div class="stat-card-title">High Risk Identified</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="glass-card text-center">
+                    <div class="card-icon mx-auto"><i class="bi bi-heart-pulse-fill text-success"></i></div>
+                    <div class="stat-card-value text-success">{{ metrics.healthy_students if metrics else '120+' }}</div>
+                    <div class="stat-card-title">Healthy Index Profiles</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="glass-card text-center">
+                    <div class="card-icon mx-auto"><i class="bi bi-journal-bookmark-fill text-warning"></i></div>
+                    <div class="stat-card-value text-warning">{{ metrics.avg_stress if metrics else '6.1' }}/10</div>
+                    <div class="stat-card-title">Average Stress Level</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Preview -->
+    <section class="py-5 text-center">
+        <div class="glass-card p-4 rounded-4 shadow-lg border border-light mx-auto" style="max-width: 1000px; background: rgba(255,255,255,0.4);">
+            <div class="d-flex align-items-center gap-2 border-bottom border-light pb-2 mb-3">
+                <span class="d-inline-block rounded-circle bg-danger" style="width: 12px; height: 12px;"></span>
+                <span class="d-inline-block rounded-circle bg-warning" style="width: 12px; height: 12px;"></span>
+                <span class="d-inline-block rounded-circle bg-success" style="width: 12px; height: 12px;"></span>
+                <span class="small text-muted ms-2">MindSpace Analytics Dashboard Preview</span>
+            </div>
+            <!-- Dynamic mockup visual -->
+            <div class="p-3 bg-dark bg-opacity-75 rounded-3 text-start text-white font-monospace" style="font-size: 0.8rem; overflow-x: auto; max-height: 250px;">
+                <span class="text-success">$</span> flask run<br>
+                <span class="text-info"> * Serving Flask app 'app.py' (lazy loading)</span><br>
+                <span class="text-info"> * Environment: production</span><br>
+                <span class="text-warning"> * Syncing 'dataset/student_burnout.csv'...</span><br>
+                <span class="text-success">✔ Cleaning pipeline completed: Deleted duplicates, imputed study_hours & sleep_hours.</span><br>
+                <span class="text-success">✔ Synchronized 550 student rows to SQLAlchemy tables.</span><br>
+                <span class="text-warning"> * Training Scikit-Learn Random Forest Classifier...</span><br>
+                <span class="text-success">✔ Model trained successfully. Accuracy: 91.82%</span><br>
+                <span class="text-info"> * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Platform Capabilities</h2>
+            <p class="text-muted">A full-stack, data-driven system built for comprehensive academic analysis</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="glass-card h-100">
+                    <div class="card-icon"><i class="bi bi-bar-chart-steps"></i></div>
+                    <h5 class="fw-bold">Dynamic Visualizations</h5>
+                    <p class="text-secondary small">Interactive demographic and cohort breakdowns using Chart.js. Deep dive into department patterns, year-over-year stress progressions, and sleep distributions.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card h-100">
+                    <div class="card-icon"><i class="bi bi-cpu"></i></div>
+                    <h5 class="fw-bold">Predictive Classification</h5>
+                    <p class="text-secondary small">Pre-trained Scikit-Learn Random Forest classifier categorizes students into Low, Medium, or High burnout risks based on daily habits with probability analysis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card h-100">
+                    <div class="card-icon"><i class="bi bi-file-earmark-pdf-fill"></i></div>
+                    <h5 class="fw-bold">Automated Report Exporter</h5>
+                    <p class="text-secondary small">Download instant student summaries, department breakdowns, and metadata tables in professional formats including PDF, CSV, and formatted Excel sheets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Frequently Asked Questions</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion border-0 shadow-sm rounded-4" id="faqAccordion" style="overflow: hidden;">
+                    <div class="accordion-item border-0 mb-2 rounded-4 bg-white" style="box-shadow: 0 4px 10px rgba(0,0,0,0.015);">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                How is the burnout dataset preloaded?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary small bg-white">
+                                MindSpace bundles a CSV dataset file `dataset/student_burnout.csv`. On system startup, the data cleaning pipeline in `utils.py` reads it using Pandas, filters duplicate rows, imputes missing values using medians, and automatically saves cleaned entries into SQLite database tables.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-2 rounded-4 bg-white" style="box-shadow: 0 4px 10px rgba(0,0,0,0.015);">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                What machine learning model is utilized?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary small bg-white">
+                                We utilize a Scikit-Learn `RandomForestClassifier` trained on indicators like sleep hours, study hours, screen time, attendance, physical activity, and stress levels. It yields ~90% prediction accuracy with feature importances available to read.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-2 rounded-4 bg-white" style="box-shadow: 0 4px 10px rgba(0,0,0,0.015);">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                How do administrative features work?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary small bg-white">
+                                Admin users have role-based authorization to modify the database. They can perform CRUD operations on student records, download raw files, trigger ML model retraining, and view system audit logs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section class="py-5">
+        <div class="glass-card p-5 mx-auto" style="max-width: 800px;">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-2">Connect With Us</h4>
+                    <p class="text-secondary small mb-0">Have questions about integrations or need help hosting MindSpace on your campus infrastructure? Drop us a message.</p>
+                </div>
+                <div class="col-md-6">
+                    <form onsubmit="event.preventDefault(); showToast('Your inquiry has been simulated successfully!', 'success');">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-glass-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

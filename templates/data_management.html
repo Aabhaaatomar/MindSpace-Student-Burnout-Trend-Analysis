@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}Data Management - MindSpace{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Student Record Dataset</h2>
+            <p class="text-secondary small mb-0">Tabular database management, filtering, and CRUD operations</p>
+        </div>
+        <div>
+            <a href="{{ url_for('admin.add_student') }}" class="btn btn-glass-primary py-2 px-3 small d-flex align-items-center gap-2">
+                <i class="bi bi-plus-circle"></i> Add Student Record
+            </a>
+        </div>
+    </div>
+
+    <!-- Filter & Search Controls Panel -->
+    <div class="glass-card mb-4 p-3">
+        <form method="GET" action="{{ url_for('admin.students') }}" class="row g-2 align-items-end">
+            <!-- Search Text -->
+            <div class="col-md-4">
+                <label class="form-label small fw-semibold text-secondary mb-1">Search Keywords</label>
+                <div class="position-relative">
+                    <i class="bi bi-search text-muted position-absolute start-0 top-50 translate-middle-y ms-3"></i>
+                    <input type="text" name="search" value="{{ search }}" class="form-control ps-5" placeholder="ID, name, email...">
+                </div>
+            </div>
+            <!-- Department dropdown -->
+            <div class="col-md-3">
+                <label class="form-label small fw-semibold text-secondary mb-1">Department</label>
+                <select name="department" class="form-select">
+                    <option value="">All Departments</option>
+                    {% for dept in depts %}
+                    <option value="{{ dept }}" {% if dept_filter == dept %}selected{% endif %}>{{ dept }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <!-- Burnout Category dropdown -->
+            <div class="col-md-3">
+                <label class="form-label small fw-semibold text-secondary mb-1">Burnout Category</label>
+                <select name="risk" class="form-select">
+                    <option value="">All Risk Levels</option>
+                    <option value="Low" {% if risk_filter == 'Low' %}selected{% endif %}>Low Risk</option>
+                    <option value="Medium" {% if risk_filter == 'Medium' %}selected{% endif %}>Medium Risk</option>
+                    <option value="High" {% if risk_filter == 'High' %}selected{% endif %}>High Risk</option>
+                </select>
+            </div>
+            <!-- Submit/Reset button -->
+            <div class="col-md-2 d-flex gap-2">
+                <button type="submit" class="btn btn-glass-primary w-100 py-2">Filter</button>
+                <a href="{{ url_for('admin.students') }}" class="btn btn-glass-outline py-2" title="Reset filters"><i class="bi bi-arrow-counterclockwise"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main Data Table -->
+    <div class="glass-card p-3 mb-4">
+        <div class="d-flex align-items-center justify-content-between mb-3 border-bottom border-light pb-2">
+            <span class="small fw-semibold text-secondary">Displaying Cleaned Database Records</span>
+            <div class="d-flex gap-2">
+                <a href="{{ url_for('admin.export_csv', department=dept_filter, risk=risk_filter) }}" class="btn btn-outline-secondary btn-sm small py-1 px-2 d-flex align-items-center gap-1"><i class="bi bi-filetype-csv"></i> CSV</a>
+                <a href="{{ url_for('admin.export_excel', department=dept_filter, risk=risk_filter) }}" class="btn btn-outline-success btn-sm small py-1 px-2 d-flex align-items-center gap-1"><i class="bi bi-file-earmark-excel"></i> Excel</a>
+                <a href="{{ url_for('admin.export_pdf', department=dept_filter, risk=risk_filter) }}" class="btn btn-outline-danger btn-sm small py-1 px-2 d-flex align-items-center gap-1"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table glass-table align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col" class="text-center">Year</th>
+                        <th scope="col" class="text-center">Sleep</th>
+                        <th scope="col" class="text-center">Study</th>
+                        <th scope="col" class="text-center">Stress</th>
+                        <th scope="col" class="text-center">Attend</th>
+                        <th scope="col" class="text-center">Burnout</th>
+                        <th scope="col" class="text-center">Risk</th>
+                        <th scope="col" class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if students %}
+                        {% for s in students %}
+                        <tr>
+                            <td><code class="small fw-bold">{{ s.student_uid }}</code></td>
+                            <td>
+                                <strong class="small text-dark d-block">{{ s.name }}</strong>
+                                <span class="text-muted" style="font-size: 0.7rem;">{{ s.gender }} | {{ s.age }} yrs</span>
+                            </td>
+                            <td class="small text-secondary">{{ s.department }}</td>
+                            <td class="text-center small">{{ s.academic_year }}</td>
+                            <td class="text-center small">{{ s.sleep_hours }}h</td>
+                            <td class="text-center small">{{ s.study_hours }}h</td>
+                            <td class="text-center small fw-bold">{{ s.stress_level|int }}/10</td>
+                            <td class="text-center small">{{ s.attendance }}%</td>
+                            <td class="text-center small">{{ s.burnout_score }}</td>
+                            <td class="text-center">
+                                {% if s.burnout_category == 'High' %}
+                                    <span class="badge-glass-danger">High</span>
+                                {% elif s.burnout_category == 'Medium' %}
+                                    <span class="badge-glass-warning">Medium</span>
+                                {% else %}
+                                    <span class="badge-glass-success">Low</span>
+                                {% endif %}
+                            </td>
+                            <td class="text-end">
+                                <div class="d-flex align-items-center justify-content-end gap-1">
+                                    <a href="{{ url_for('admin.edit_student', id=s.id) }}" class="btn btn-sm btn-link text-primary p-1" title="Edit Student"><i class="bi bi-pencil-square fs-5"></i></a>
+                                    <!-- Delete triggers form submission via confirmation dialog -->
+                                    <form action="{{ url_for('admin.delete_student', id=s.id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to permanently delete student {{ s.student_uid }}? This action is recorded.');">
+                                        <button type="submit" class="btn btn-sm btn-link text-danger p-1" title="Delete Student"><i class="bi bi-trash3 fs-5"></i></button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="11" class="text-center py-5 text-muted">
+                                <div class="empty-state">
+                                    <i class="bi bi-database-exclamation"></i>
+                                    <h5>No Student Records Found</h5>
+                                    <p class="small text-muted mb-0">Try clearing filters or search strings.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination Controls -->
+        {% if pagination and pagination.pages > 1 %}
+        <nav class="d-flex justify-content-center mt-3">
+            <ul class="pagination pagination-sm gap-1 border-0">
+                <!-- Previous Page -->
+                <li class="page-item {% if not pagination.has_prev %}disabled{% endif %}">
+                    <a class="page-link rounded-3 border-light bg-light bg-opacity-25" href="{{ url_for('admin.students', page=pagination.prev_num, search=search, department=dept_filter, risk=risk_filter) }}"><i class="bi bi-chevron-left"></i></a>
+                </li>
+                
+                <!-- Page numbers -->
+                {% for page_num in pagination.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+                    {% if page_num %}
+                        <li class="page-item {% if pagination.page == page_num %}active{% endif %}">
+                            <a class="page-link rounded-3 border-light {% if pagination.page == page_num %}btn-glass-primary border-0{% else %}bg-light bg-opacity-25 text-dark{% endif %}" href="{{ url_for('admin.students', page=page_num, search=search, department=dept_filter, risk=risk_filter) }}">{{ page_num }}</a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled"><span class="page-link border-0">...</span></li>
+                    {% endif %}
+                {% endfor %}
+                
+                <!-- Next Page -->
+                <li class="page-item {% if not pagination.has_next %}disabled{% endif %}">
+                    <a class="page-link rounded-3 border-light bg-light bg-opacity-25" href="{{ url_for('admin.students', page=pagination.next_num, search=search, department=dept_filter, risk=risk_filter) }}"><i class="bi bi-chevron-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

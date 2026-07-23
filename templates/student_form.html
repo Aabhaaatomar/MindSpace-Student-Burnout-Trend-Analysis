@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - MindSpace{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="glass-card">
+                <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-light pb-2">
+                    <h4 class="fw-bold mb-0">{{ title }}</h4>
+                    <a href="{{ url_for('admin.students') }}" class="btn btn-sm btn-glass-outline py-1 px-3 small"><i class="bi bi-arrow-left"></i> Cancel</a>
+                </div>
+
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+
+                    <div class="row g-3 mb-3">
+                        <!-- Student Name -->
+                        <div class="col-md-6">
+                            <label for="name" class="form-label small fw-semibold text-secondary">Student Full Name</label>
+                            {{ form.name(class="form-control", placeholder="Jane Doe") }}
+                            {% if form.name.errors %}
+                                {% for error in form.name.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Gender dropdown -->
+                        <div class="col-md-3">
+                            <label for="gender" class="form-label small fw-semibold text-secondary">Gender</label>
+                            {{ form.gender(class="form-select") }}
+                        </div>
+
+                        <!-- Age -->
+                        <div class="col-md-3">
+                            <label for="age" class="form-label small fw-semibold text-secondary">Age (Years)</label>
+                            {{ form.age(class="form-control", placeholder="20") }}
+                            {% if form.age.errors %}
+                                {% for error in form.age.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <!-- Department dropdown -->
+                        <div class="col-md-6">
+                            <label for="department" class="form-label small fw-semibold text-secondary">Department Course</label>
+                            {{ form.department(class="form-select") }}
+                        </div>
+
+                        <!-- Academic Year dropdown -->
+                        <div class="col-md-6">
+                            <label for="academic_year" class="form-label small fw-semibold text-secondary">Academic Enrollment Year</label>
+                            {{ form.academic_year(class="form-select") }}
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold text-primary mt-4 mb-3 border-bottom border-light pb-1"><i class="bi bi-activity me-1"></i>Habit Metrics & Daily Indicators</h6>
+
+                    <div class="row g-3 mb-3">
+                        <!-- Sleep Hours -->
+                        <div class="col-md-4">
+                            <label for="sleep_hours" class="form-label small fw-semibold text-secondary">Sleep Hours / Day</label>
+                            {{ form.sleep_hours(class="form-control", placeholder="7.5") }}
+                            {% if form.sleep_hours.errors %}
+                                {% for error in form.sleep_hours.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Study Hours -->
+                        <div class="col-md-4">
+                            <label for="study_hours" class="form-label small fw-semibold text-secondary">Study Hours / Day</label>
+                            {{ form.study_hours(class="form-control", placeholder="4.5") }}
+                            {% if form.study_hours.errors %}
+                                {% for error in form.study_hours.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Screen Time -->
+                        <div class="col-md-4">
+                            <label for="screen_time" class="form-label small fw-semibold text-secondary">Screen Time / Day (Hours)</label>
+                            {{ form.screen_time(class="form-control", placeholder="5.2") }}
+                            {% if form.screen_time.errors %}
+                                {% for error in form.screen_time.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <!-- Stress Level -->
+                        <div class="col-md-3">
+                            <label for="stress_level" class="form-label small fw-semibold text-secondary">Stress Level (1-10)</label>
+                            {{ form.stress_level(class="form-control", placeholder="6") }}
+                            {% if form.stress_level.errors %}
+                                {% for error in form.stress_level.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Attendance -->
+                        <div class="col-md-3">
+                            <label for="attendance" class="form-label small fw-semibold text-secondary">Attendance Rate (%)</label>
+                            {{ form.attendance(class="form-control", placeholder="90.5") }}
+                            {% if form.attendance.errors %}
+                                {% for error in form.attendance.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Mental Fatigue -->
+                        <div class="col-md-3">
+                            <label for="mental_fatigue" class="form-label small fw-semibold text-secondary">Mental Fatigue (0.0-1.0)</label>
+                            {{ form.mental_fatigue(class="form-control", placeholder="0.55") }}
+                            {% if form.mental_fatigue.errors %}
+                                {% for error in form.mental_fatigue.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                        <!-- Physical Activity -->
+                        <div class="col-md-3">
+                            <label for="physical_activity" class="form-label small fw-semibold text-secondary">Exercise (Hrs/Week)</label>
+                            {{ form.physical_activity(class="form-control", placeholder="3.5") }}
+                            {% if form.physical_activity.errors %}
+                                {% for error in form.physical_activity.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="mt-4 border-top border-light pt-3 text-end">
+                        {{ form.submit(class="btn btn-glass-primary py-2 px-4 fs-6") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

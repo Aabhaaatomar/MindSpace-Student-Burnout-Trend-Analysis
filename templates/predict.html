@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% block title %}ML Burnout Predictor - MindSpace{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Machine Learning Burnout Predictor</h2>
+            <p class="text-secondary small mb-0">Habit-based classification engine and personalized lifestyle counseling</p>
+        </div>
+        {% if model_meta %}
+        <span class="badge-glass-success py-2 px-3 small d-flex align-items-center gap-2">
+            <i class="bi bi-shield-check-fill text-success fs-6"></i> Model Accuracy: {{ (model_meta.accuracy * 100)|round(2) }}%
+        </span>
+        {% endif %}
+    </div>
+
+    <div class="row g-4">
+        <!-- Input Form Card -->
+        <div class="col-lg-6">
+            <div class="glass-card">
+                <h5 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-sliders text-primary me-2"></i>Habit Parameter Inputs</h5>
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="study_hours" class="form-label small fw-semibold text-secondary">Study Hours / Day</label>
+                            {{ form.study_hours(class="form-control", placeholder="e.g. 5.2") }}
+                            {% if form.study_hours.errors %}
+                                {% for error in form.study_hours.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label for="sleep_hours" class="form-label small fw-semibold text-secondary">Sleep Hours / Day</label>
+                            {{ form.sleep_hours(class="form-control", placeholder="e.g. 7.0") }}
+                            {% if form.sleep_hours.errors %}
+                                {% for error in form.sleep_hours.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="stress_level" class="form-label small fw-semibold text-secondary">Stress Level (1 - 10)</label>
+                            {{ form.stress_level(class="form-control", placeholder="1=low, 10=severe") }}
+                            {% if form.stress_level.errors %}
+                                {% for error in form.stress_level.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label for="screen_time" class="form-label small fw-semibold text-secondary">Daily Screen Time (Hours)</label>
+                            {{ form.screen_time(class="form-control", placeholder="e.g. 4.8") }}
+                            {% if form.screen_time.errors %}
+                                {% for error in form.screen_time.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="attendance" class="form-label small fw-semibold text-secondary">Lecture Attendance (%)</label>
+                            {{ form.attendance(class="form-control", placeholder="e.g. 92.5") }}
+                            {% if form.attendance.errors %}
+                                {% for error in form.attendance.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label for="physical_activity" class="form-label small fw-semibold text-secondary">Weekly Exercise (Hours)</label>
+                            {{ form.physical_activity(class="form-control", placeholder="e.g. 3.0") }}
+                            {% if form.physical_activity.errors %}
+                                {% for error in form.physical_activity.errors %}
+                                    <div class="text-danger small mt-1">{{ error }}</div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mental_fatigue" class="form-label small fw-semibold text-secondary">Mental Fatigue Score (0.0 - 1.0)</label>
+                        {{ form.mental_fatigue(class="form-control", placeholder="0.0=fresh, 1.0=exhausted") }}
+                        {% if form.mental_fatigue.errors %}
+                            {% for error in form.mental_fatigue.errors %}
+                                <div class="text-danger small mt-1">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    {{ form.submit(class="btn btn-glass-primary w-100 py-2 fs-6") }}
+                </form>
+            </div>
+        </div>
+
+        <!-- Output Prediction Details Card -->
+        <div class="col-lg-6">
+            {% if result %}
+            <!-- Prediction Output result -->
+            <div class="glass-card mb-4 border-start border-4 {% if result.prediction == 'High' %}border-danger{% elif result.prediction == 'Medium' %}border-warning{% else %}border-success{% endif %}" style="border-width: 5px !important;">
+                <h5 class="fw-bold mb-3"><i class="bi bi-cpu-fill text-primary me-2"></i>Analysis Results</h5>
+                
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>
+                        <span class="d-block text-secondary small uppercase fw-bold" style="font-size: 0.65rem; letter-spacing: 0.05em;">Predicted Category</span>
+                        <h2 class="fw-bold {% if result.prediction == 'High' %}text-danger{% elif result.prediction == 'Medium' %}text-warning{% else %}text-success{% endif %} mb-0">{{ result.prediction }} Burnout</h2>
+                    </div>
+                    <div class="text-end">
+                        <span class="d-block text-secondary small uppercase fw-bold" style="font-size: 0.65rem; letter-spacing: 0.05em;">Prediction Confidence</span>
+                        <h4 class="fw-bold text-dark mb-0">{{ (result.confidence * 100)|round(1) }}%</h4>
+                    </div>
+                </div>
+
+                <!-- Probability breakdown chart bars -->
+                <div class="mb-4 border-top border-light pt-3">
+                    <span class="d-block text-secondary small fw-semibold mb-2">Probability Distribution Map</span>
+                    {% for cat, prob in result.probabilities.items() %}
+                    <div class="mb-2">
+                        <div class="d-flex justify-content-between small text-muted mb-1" style="font-size: 0.75rem;">
+                            <span>{{ cat }} Risk</span>
+                            <span>{{ (prob * 100)|round(1) }}%</span>
+                        </div>
+                        <div class="progress" style="height: 6px; background-color: rgba(0,0,0,0.05);">
+                            <div class="progress-bar {% if cat == 'High' %}bg-danger{% elif cat == 'Medium' %}bg-warning{% else %}bg-success{% endif %}" role="progressbar" style="width: {{ prob * 100 }}%"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Personalized recommendations for this output -->
+            <div class="glass-card">
+                <h6 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-heart-pulse-fill text-danger me-2"></i>Targeted Interventions</h6>
+                <div class="row g-2">
+                    {% for rec in recs %}
+                    <div class="col-12">
+                        <div class="p-2 border rounded-3 bg-white bg-opacity-50 border-light d-flex gap-3 align-items-start">
+                            <span class="badge bg-{{ rec.type }} bg-opacity-10 text-{{ rec.type }} p-2 mt-1">
+                                <i class="bi {{ rec.icon }}" style="font-size: 1rem;"></i>
+                            </span>
+                            <div>
+                                <strong class="small text-dark d-block" style="font-size: 0.8rem;">{{ rec.title }}</strong>
+                                <p class="mb-0 text-secondary small" style="font-size: 0.72rem;">{{ rec.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+            <!-- Default placeholder view before form submission -->
+            <div class="glass-card h-100 d-flex flex-column align-items-center justify-content-center py-5 text-center text-secondary">
+                <i class="bi bi-robot fs-1 mb-3 text-primary opacity-50"></i>
+                <h5 class="fw-bold text-dark">Ready for Habit Analysis</h5>
+                <p class="small text-muted mb-0" style="max-width: 320px;">Fill out the habit details in the inputs form and select "Analyze Burnout Risk" to evaluate indicators using Scikit-Learn.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Feature Importance Panel -->
+    {% if model_meta and model_meta.feature_importance %}
+    <div class="glass-card mt-4">
+        <h5 class="fw-bold mb-3 border-bottom border-light pb-2"><i class="bi bi-bar-chart-fill text-primary me-2"></i>Model Feature Importance Metrics</h5>
+        <p class="text-secondary small mb-4">Random Forest classifier metric weights, showcasing which indicators hold the highest weight in classifying burnout.</p>
+        <div class="row g-3">
+            {% for fi in model_meta.feature_importance %}
+            <div class="col-md-6 col-lg-3">
+                <div class="p-3 border border-light rounded-3 bg-white bg-opacity-50 h-100">
+                    <span class="d-block small text-secondary fw-semibold uppercase" style="font-size: 0.65rem; letter-spacing: 0.05em;">Weight Rank #{{ loop.index }}</span>
+                    <strong class="d-block text-dark small mb-2">{{ fi.feature }}</strong>
+                    <div class="progress mb-1" style="height: 6px; background-color: rgba(0,0,0,0.05);">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ fi.importance * 100 }}%"></div>
+                    </div>
+                    <span class="text-muted small" style="font-size: 0.7rem;">Relative Importance: {{ (fi.importance * 100)|round(1) }}%</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
