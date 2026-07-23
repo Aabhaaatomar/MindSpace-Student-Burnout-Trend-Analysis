@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found - MindSpace{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center py-5">
+        <div class="col-md-6 text-center">
+            <div class="glass-card py-5 px-4">
+                <h1 class="display-1 fw-bold text-primary mb-3">404</h1>
+                <h3 class="fw-bold mb-3">Resource Not Found</h3>
+                <p class="text-secondary small mb-5 mx-auto" style="max-width: 360px;">The URL path you requested does not exist or has been removed from the MindSpace system.</p>
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <a href="javascript:history.back();" class="btn btn-glass-outline px-4"><i class="bi bi-arrow-left me-1"></i> Go Back</a>
+                    <a href="{{ url_for('main.index') }}" class="btn btn-glass-primary px-4"><i class="bi bi-house me-1"></i> Home Portal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
